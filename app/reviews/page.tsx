@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import { HomeContent } from "@/components/home-content";
 
 export const metadata: Metadata = {
-  title: "Reviews & Testimonials - Proehlific Park Greensboro",
+  title: "Reviews & Testimonials - Cort Fitness Etobicoke",
   description:
-    "Read reviews and testimonials from Proehlific Park members in Greensboro, NC. See what our community has to say about their experience.",
+    "Read reviews and testimonials from Cort Fitness members in Etobicoke. See what our clients have to say about their transformation with Coach Cort.",
   alternates: {
-    canonical: "https://proehlificpark.com/reviews",
+    canonical: "https://coachcort.com/reviews",
   },
   openGraph: {
-    title: "Reviews & Testimonials - Proehlific Park Greensboro",
+    title: "Reviews & Testimonials - Cort Fitness Etobicoke",
     description:
-      "Read reviews and testimonials from Proehlific Park members in Greensboro, NC. See what our community has to say about their experience.",
-    url: "https://proehlificpark.com/reviews",
-    images: ["/proehlific-facility.jpg"],
+      "Read reviews and testimonials from Cort Fitness members in Etobicoke. See what our clients have to say about their transformation with Coach Cort.",
+    url: "https://coachcort.com/reviews",
+    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
   },
 };
 

@@ -8,139 +8,92 @@ import { useState } from "react"
 
 const programs = [
   {
-    title: "Fitness",
+    title: "Personal Training",
     description:
-      "Access our fully equipped gym with state-of-the-art weight lifting equipment, cardio machines, locker rooms, saunas, and showers. All memberships include a free one-hour fitness consultation.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7466/fitness-main-212393.jpg",
+      "One-on-one customized training programs designed to help you build muscle, lose fat, and achieve your specific fitness goals with expert guidance from our certified trainers.",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg",
     objectPosition: "center",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">
-          Our state-of-the-art fitness facility offers everything you need to achieve your goals. With your membership, you'll have access to our facility any time during open hours.
+          Our personal training programs are tailored specifically to your goals, fitness level, and schedule. Work one-on-one with our expert trainers to achieve results faster.
         </p>
         <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Included Amenities:</h4>
+          <h4 className="font-semibold text-foreground">What&apos;s Included:</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Weight Room:</strong> Complete lifting equipment for strength training</li>
-            <li><strong>Cardio Machines:</strong> Treadmills, ellipticals, stationary bikes, and more</li>
-            <li><strong>Locker Rooms:</strong> Private facilities with saunas and showers</li>
-            <li><strong>Free WiFi:</strong> Stay connected during your workout</li>
-            <li><strong>Personal Training:</strong> Optional one-on-one coaching available</li>
+            <li><strong>Custom Programming:</strong> Workouts designed for your specific goals</li>
+            <li><strong>Nutrition Guidance:</strong> Learn how to eat for your goals</li>
+            <li><strong>Progress Tracking:</strong> Regular assessments to measure results</li>
+            <li><strong>Accountability:</strong> Your trainer keeps you on track</li>
           </ul>
         </div>
       </div>
     ),
   },
   {
-    title: "Group Exercise",
+    title: "Group Classes",
     description:
-      "Join our group exercise classes designed to keep you interested and motivated. From cycling to fitness classes, we have something for everyone looking to lose weight and have fun.",
-    image: "https://res.cloudinary.com/display97/image/upload/7466/pick-up-56-213370.jpg",
+      "Join our energizing group fitness classes led by certified instructors. From HIIT to yoga, we offer classes for all fitness levels in a motivating community environment.",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/hyrox-291192.jpeg",
     objectPosition: "center",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">
-          Our highly trained instructors guide you through varied workouts in a supportive group environment. Group classes are a great way to stay motivated and meet new people.
+          Our group classes provide the energy and motivation of training with others while still getting expert instruction. Classes are designed for all fitness levels.
         </p>
         <div className="space-y-3">
           <h4 className="font-semibold text-foreground">Class Options:</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Cycle Studio:</strong> High-energy cycling workouts with trained instructors</li>
-            <li><strong>Group Fitness:</strong> Various formats to keep you challenged</li>
-            <li><strong>Personal Training:</strong> One-on-one attention for faster results</li>
+            <li><strong>HIIT Training:</strong> High-intensity interval workouts for maximum results</li>
+            <li><strong>Yoga:</strong> Improve flexibility, balance, and mental clarity</li>
+            <li><strong>Pilates:</strong> Core-focused strength and stability training</li>
+            <li><strong>Strength Classes:</strong> Build muscle in a group setting</li>
           </ul>
         </div>
       </div>
     ),
   },
   {
-    title: "Sports",
+    title: "Youth Group Training",
     description:
-      "Get moving with our youth and adult sports leagues and drop-in games! We offer Basketball, Baseball, Football, Soccer, Lacrosse, and more. There's never a wrong time to get started!",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7466/sports-main-212395.jpg",
+      "Specialized training programs for young athletes looking to build strength, improve performance, and develop healthy fitness habits that will last a lifetime.",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/coaching-boys-280787.jpg",
     objectPosition: "center",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">
-          Proehlific Park offers comprehensive sports programming for athletes of all ages and skill levels. Join a league or come for drop-in games.
+          Our youth programs are designed to help young athletes build a foundation of strength, coordination, and healthy habits. Training is age-appropriate and fun.
         </p>
         <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Sports We Offer:</h4>
+          <h4 className="font-semibold text-foreground">Program Benefits:</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Basketball:</strong> Youth and adult leagues plus open gym</li>
-            <li><strong>Baseball:</strong> Training and league play</li>
-            <li><strong>Football:</strong> Skills training and team sports</li>
-            <li><strong>Soccer:</strong> Indoor and outdoor programs</li>
-            <li><strong>Lacrosse:</strong> Growing program for all skill levels</li>
+            <li><strong>Athletic Development:</strong> Build speed, strength, and agility</li>
+            <li><strong>Sport-Specific Training:</strong> Improve performance in your sport</li>
+            <li><strong>Confidence Building:</strong> Develop mental toughness</li>
+            <li><strong>Team Environment:</strong> Train with peers in a supportive setting</li>
           </ul>
         </div>
       </div>
     ),
   },
   {
-    title: "Youth Programs",
+    title: "HYROX Training",
     description:
-      "When school is out, come on in! We offer After School Care, Summer Camps, and child care on teacher workdays, holidays, and inclement weather closings. Kids love sports, games, and arts & crafts!",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7466/youth-main-212394.jpg",
+      "Prepare for HYROX competitions with our specialized training program. Build the endurance, strength, and skills needed to compete at the highest level in this growing fitness race.",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/hyrox-291192.jpeg",
     objectPosition: "center",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">
-          Our youth programs are designed to keep kids active, engaged, and having fun. Our dedicated staff creates a safe, nurturing environment for children of all ages.
+          HYROX is the world&apos;s largest fitness race, combining running with functional workout stations. Our training program prepares you to compete and excel.
         </p>
         <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Programs Include:</h4>
+          <h4 className="font-semibold text-foreground">Training Focus:</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>After School Care:</strong> Safe, fun environment after school hours</li>
-            <li><strong>Summer Blast Camp:</strong> Full summer programming with activities</li>
-            <li><strong>Holiday Care:</strong> Coverage during school breaks and closings</li>
-            <li><strong>Sports & Games:</strong> Dodgeball, arts and crafts, and more</li>
-          </ul>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "PSP Training",
-    description:
-      "Our Proehlific Sports Performance program offers elite training for serious athletes looking to take their game to the next level with professional coaching and facilities.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7466/psp-main-212328.jpg",
-    objectPosition: "center",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          PSP (Proehlific Sports Performance) is our elite training program designed for athletes who want to maximize their potential. Work with experienced coaches in a professional setting.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Training Includes:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Strength & Conditioning:</strong> Build power and endurance</li>
-            <li><strong>Speed & Agility:</strong> Improve quickness and reaction time</li>
-            <li><strong>Sport-Specific Training:</strong> Tailored to your sport</li>
-            <li><strong>Professional Coaching:</strong> Learn from experienced trainers</li>
-          </ul>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Facility Rentals",
-    description:
-      "Host your event, birthday party, or team practice at Proehlific Park. Our versatile facility spaces are available for rental with full amenities and support staff.",
-    image: "https://res.cloudinary.com/display97/image/upload/7466/summer-blast-41-255680.jpg",
-    objectPosition: "center",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          Looking for a venue for your next event? Proehlific Park offers flexible rental options for parties, team events, corporate gatherings, and more.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Rental Options:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Birthday Parties:</strong> Make their day special</li>
-            <li><strong>Team Events:</strong> Practice and game space</li>
-            <li><strong>Corporate Events:</strong> Team building and meetings</li>
-            <li><strong>Private Events:</strong> Custom arrangements available</li>
+            <li><strong>Running Endurance:</strong> Build the stamina for 8km of running</li>
+            <li><strong>Functional Fitness:</strong> Master sled pushes, wall balls, rowing, and more</li>
+            <li><strong>Competition Prep:</strong> Race-specific strategies and pacing</li>
+            <li><strong>Community:</strong> Train with other HYROX athletes</li>
           </ul>
         </div>
       </div>
@@ -164,11 +117,11 @@ export function Classes() {
         <div className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Programs</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From fitness to youth sports, we have programs designed to help the whole family achieve their goals
+            From personal training to group classes, we have programs designed to help you achieve your goals
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
           {programs.map((program, index) => (
             <div
               key={index}
@@ -182,6 +135,7 @@ export function Classes() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                     style={{ objectPosition: program.objectPosition || "center" }}
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -209,13 +163,13 @@ export function Classes() {
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-100 via-emerald-50 to-slate-100 p-12 shadow-xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-sm font-medium mb-6">
               <Info className="h-4 w-4" />
-              Take a Tour
+              Free Assessment
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Experience Proehlific Park</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Experience Cort Fitness</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Please stop by and take a tour! We would love to meet you and show you our awesome facility. Become a member of the Park and together we can enjoy the P.O.W.E.R. of Play!
+              Book a free fitness assessment and tour of our facility. We&apos;ll discuss your goals and create a personalized plan to help you achieve them.
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Button
                 onClick={scrollToForm}
                 size="lg"
@@ -223,21 +177,7 @@ export function Classes() {
               >
                 Request More Info
               </Button>
-              <p className="text-sm text-muted-foreground">Programs for all ages • Family-friendly facility</p>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-                className="w-full h-auto"
-                poster="https://res.cloudinary.com/display97/video/upload/so_0/dawynyrmvdjvs7xlinsy.jpg"
-              >
-                <source src="https://res.cloudinary.com/display97/video/upload/vc_auto/dawynyrmvdjvs7xlinsy.mp4" type="video/mp4" />
-                <source src="https://res.cloudinary.com/display97/video/upload/vc_auto/dawynyrmvdjvs7xlinsy.webm" type="video/webm" />
-              </video>
+              <p className="text-sm text-muted-foreground">Personal training • Group classes • HYROX prep</p>
             </div>
           </div>
         </div>

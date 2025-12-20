@@ -5,34 +5,34 @@ import { useState } from "react"
 
 const faqs = [
   {
-    question: "What programs does Proehlific Park offer?",
+    question: "What programs does Cort Fitness offer?",
     answer:
-      "Proehlific Park offers a comprehensive range of programs including fitness and weight room access, group exercise classes, cycling studio, youth sports leagues, adult sports leagues, after school care, Summer Blast camp, PSP (Proehlific Sports Performance) training, and facility rentals for events and parties.",
+      "Cort Fitness offers personal training, group fitness classes, youth group training, and specialized HYROX competition training. All our programs are designed to help you build muscle, lose fat, and achieve your fitness goals with expert guidance.",
   },
   {
-    question: "What are your membership options?",
+    question: "Do you offer a free assessment?",
     answer:
-      "We offer various membership options to fit your needs. All memberships include access to our fitness center, locker rooms with saunas and showers, free WiFi, and a complimentary one-hour fitness consultation. Contact us to learn about current pricing and family rates.",
+      "Yes! We offer a complimentary fitness assessment for all new clients. During your free assessment, we'll discuss your goals, evaluate your current fitness level, and create a personalized plan to help you succeed. It's the perfect way to see if Cort Fitness is right for you.",
   },
   {
-    question: "What is Summer Blast camp?",
+    question: "What is HYROX training?",
     answer:
-      "Summer Blast is our popular summer program for kids when school is out. Children participate in a variety of activities including sports, games, dodgeball, arts and crafts, and more. Our dedicated staff creates a fun, safe environment where kids come home tired and happy! We also offer care during teacher workdays, holidays, and inclement weather closings.",
+      "HYROX is the world's largest fitness race, combining 8km of running with 8 functional workout stations including sled pushes, rowing, wall balls, and more. Our HYROX training program prepares you to compete at any level, whether you're a first-timer or looking to improve your time.",
   },
   {
-    question: "Do you offer after school programs?",
+    question: "Who are the trainers at Cort Fitness?",
     answer:
-      "Yes! Our after school program provides a safe, fun environment for children after school hours. Kids participate in sports, games, and activities while making friends and staying active. Parents love the convenience and peace of mind our program provides.",
+      "Our team includes Andrew Cortellessa (Owner & Personal Trainer), Joseph El-Achhab (Yoga, HIIT & Pilates Instructor), Taya Smith (Personal Trainer & Nutrition Coach), and Adam Chang (On-Site Physio Coach). Each trainer brings unique expertise to help you reach your goals.",
   },
   {
-    question: "What sports do you offer for youth and adults?",
+    question: "Where is Cort Fitness located?",
     answer:
-      "We offer a wide range of sports including basketball, baseball, football, soccer, and lacrosse. We have both youth and adult leagues as well as drop-in games. Whether you're looking for competitive league play or casual pickup games, we have options for all skill levels.",
+      "Cort Fitness is located at 313 Evans Avenue in Etobicoke, Ontario M8Z 1K2. We're easily accessible and have convenient parking. Stop by for a tour and see our facility for yourself!",
   },
   {
-    question: "Can I tour the facility before joining?",
+    question: "What are your hours of operation?",
     answer:
-      "Absolutely! We encourage everyone to stop by and take a tour of our facility. We would love to meet you and show you our awesome staff and amenities. Contact us to schedule a visit and see why Proehlific Park is Greensboro's premier sports training center.",
+      "We're open Monday through Friday from 6:00 AM to 9:00 PM, Saturday from 8:00 AM to 4:00 PM, and Sunday from 9:00 AM to 2:00 PM. Contact us to schedule your free assessment at a time that works for you.",
   },
 ]
 
@@ -49,7 +49,7 @@ export function FAQ() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get answers to common questions about Proehlific Park
+            Get answers to common questions about Cort Fitness
           </p>
         </div>
 

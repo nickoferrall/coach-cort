@@ -5,7 +5,6 @@ import type React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useState } from "react";
@@ -82,10 +81,10 @@ export function Facility() {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              About Proehlific Park
+              About Cort Fitness
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Your home for sports, fitness, and community
+              Your home for personal training in Etobicoke
             </p>
           </div>
 
@@ -93,26 +92,25 @@ export function Facility() {
             <CardContent className="p-8 md:p-12">
               <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
                 <p>
-                  The Proehlific Park mission is to{" "}
-                  <span className="font-bold text-foreground">inspire</span>,{" "}
-                  <span className="font-bold text-foreground">cultivate</span>, and{" "}
-                  <span className="font-bold text-foreground">ignite</span> the P.O.W.E.R. within each of us no matter our age using sport, exercise, play and spirituality as tools for life.
+                  At Cort Fitness, our mission is to help you{" "}
+                  <span className="font-bold text-foreground">build muscle</span>,{" "}
+                  <span className="font-bold text-foreground">lose fat</span>, and{" "}
+                  <span className="font-bold text-foreground">become the strongest version of yourself</span>.
                 </p>
                 <p>
-                  Founded by former NFL wide receiver Ricky Proehl, Proehlific Park is Greensboro&apos;s comprehensive sports training center serving athletes and families of all ages. From our state-of-the-art fitness center to our youth programs and sports leagues, we provide everything you need to achieve your goals.
+                  Founded by Andrew Cortellessa, Cort Fitness is Etobicoke&apos;s premier personal training gym. We offer customized training programs specific to your goals, whether you&apos;re looking to lose weight, build strength, or prepare for competitions like HYROX.
                 </p>
                 <p>
-                  Our dedicated staff and family-oriented community create an encouraging environment where everyone can thrive. Whether you&apos;re looking for personal training, group fitness classes, youth sports, or after school care, we have programs designed for you.
+                  Our team of certified trainers brings expertise in personal training, yoga, HIIT, pilates, and physiotherapy. We create a supportive, motivating environment where you&apos;ll be pushed to achieve results you never thought possible.
                 </p>
                 <p className="font-semibold text-foreground text-xl pt-4">
-                  Please stop by and take a tour! We would love to meet you and together we can enjoy the P.O.W.E.R. of Play!
+                  Book your free assessment today and start your transformation journey!
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
 
-        {/* Visit Our Gym Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -136,9 +134,9 @@ export function Facility() {
                         Address
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        4517 Jessup Grove Rd
+                        313 Evans Avenue
                         <br />
-                        Greensboro, NC 27410
+                        Etobicoke, Ontario M8Z 1K2
                       </p>
                     </div>
                   </div>
@@ -150,10 +148,10 @@ export function Facility() {
                     <div>
                       <h4 className="font-bold text-foreground mb-1">Phone</h4>
                       <a
-                        href="tel:3366655233"
+                        href="tel:6479670336"
                         className="text-sm text-primary hover:text-primary/80 transition-colors"
                       >
-                        (336) 665-5233
+                        647-967-0336
                       </a>
                     </div>
                   </div>
@@ -165,10 +163,10 @@ export function Facility() {
                     <div>
                       <h4 className="font-bold text-foreground mb-1">Email</h4>
                       <a
-                        href="mailto:info@proehlificpark.com"
+                        href="mailto:a.cortfitness@gmail.com"
                         className="text-sm text-primary hover:text-primary/80 transition-colors"
                       >
-                        info@proehlificpark.com
+                        a.cortfitness@gmail.com
                       </a>
                     </div>
                   </div>
@@ -180,14 +178,14 @@ export function Facility() {
               <CardContent className="p-0">
                 <div className="aspect-[16/9] w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.5!2d-79.8898!3d36.0726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4517+Jessup+Grove+Rd%2C+Greensboro%2C+NC+27410!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.5!2d-79.5!3d43.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s313+Evans+Avenue%2C+Etobicoke%2C+Ontario!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Proehlific Park Location"
+                    title="Cort Fitness Location"
                   />
                 </div>
               </CardContent>
@@ -195,7 +193,6 @@ export function Facility() {
           </div>
         </div>
 
-        {/* Request Information Form - Now separate */}
         <div>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -268,7 +265,7 @@ export function Facility() {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="(336) 665-5233"
+                        placeholder="647-967-0336"
                         className="border-2 h-12"
                       />
                     </div>
@@ -298,7 +295,7 @@ export function Facility() {
 
                   <p className="text-xs text-muted-foreground text-center">
                     By submitting this form, you agree to receive SMS messages
-                    from Proehlific Park to provide the information you requested
+                    from Cort Fitness to provide the information you requested
                     about programs and membership. Message and data rates may
                     apply. Reply STOP to opt-out anytime.
                   </p>

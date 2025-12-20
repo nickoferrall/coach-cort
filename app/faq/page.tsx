@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import { HomeContent } from "@/components/home-content";
 
 export const metadata: Metadata = {
-  title: "FAQ - Proehlific Park Greensboro",
+  title: "FAQ - Cort Fitness Etobicoke",
   description:
-    "Frequently asked questions about Proehlific Park in Greensboro, NC. Learn about memberships, programs, youth activities, and more.",
+    "Frequently asked questions about Cort Fitness in Etobicoke. Learn about personal training, group classes, HYROX training, and more.",
   alternates: {
-    canonical: "https://proehlificpark.com/faq",
+    canonical: "https://coachcort.com/faq",
   },
   openGraph: {
-    title: "FAQ - Proehlific Park Greensboro",
+    title: "FAQ - Cort Fitness Etobicoke",
     description:
-      "Frequently asked questions about Proehlific Park in Greensboro, NC. Learn about memberships, programs, youth activities, and more.",
-    url: "https://proehlificpark.com/faq",
-    images: ["/proehlific-facility.jpg"],
+      "Frequently asked questions about Cort Fitness in Etobicoke. Learn about personal training, group classes, HYROX training, and more.",
+    url: "https://coachcort.com/faq",
+    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
   },
 };
 

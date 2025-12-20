@@ -138,7 +138,7 @@ export function CtaBanner() {
               </Button>
               <p className="text-xs text-muted-foreground text-center leading-relaxed">
                 By submitting this form, you agree to receive SMS messages from
-                Proehlific Park to provide the information you requested about
+                Cort Fitness to provide the information you requested about
                 programs and membership. Message and data rates may apply. Reply
                 STOP to opt-out anytime.
               </p>

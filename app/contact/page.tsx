@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import { HomeContent } from "@/components/home-content";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Proehlific Park Greensboro",
+  title: "Contact Us - Cort Fitness Etobicoke",
   description:
-    "Contact Proehlific Park in Greensboro, NC. Get directions, phone number, and email. Visit us at 4517 Jessup Grove Rd.",
+    "Contact Cort Fitness in Etobicoke, Ontario. Get directions, phone number, and email. Visit us at 313 Evans Avenue.",
   alternates: {
-    canonical: "https://proehlificpark.com/contact",
+    canonical: "https://coachcort.com/contact",
   },
   openGraph: {
-    title: "Contact Us - Proehlific Park Greensboro",
+    title: "Contact Us - Cort Fitness Etobicoke",
     description:
-      "Contact Proehlific Park in Greensboro, NC. Get directions, phone number, and email. Visit us at 4517 Jessup Grove Rd.",
-    url: "https://proehlificpark.com/contact",
-    images: ["/proehlific-facility.jpg"],
+      "Contact Cort Fitness in Etobicoke, Ontario. Get directions, phone number, and email. Visit us at 313 Evans Avenue.",
+    url: "https://coachcort.com/contact",
+    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
   },
 };
 

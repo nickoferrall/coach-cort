@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, MapPin, Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import { Menu, X, Phone, MapPin, Instagram, Youtube } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -38,29 +38,20 @@ export function Header() {
           <div className="flex items-center justify-between h-10 text-sm">
             <div className="flex items-center gap-2 text-white/80">
               <MapPin className="h-4 w-4" />
-              <span className="hidden sm:inline">4517 Jessup Grove Rd, Greensboro, NC 27410</span>
-              <span className="sm:hidden">Greensboro, NC</span>
+              <span className="hidden sm:inline">313 Evans Avenue, Etobicoke, Ontario M8Z 1K2</span>
+              <span className="sm:hidden">Etobicoke, ON</span>
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="tel:3366655233"
+                href="tel:6479670336"
                 className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                <span>(336) 665-5233</span>
+                <span>647-967-0336</span>
               </a>
               <div className="flex items-center gap-2">
                 <a
-                  href="https://www.facebook.com/ProehlificPark/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-4 w-4" />
-                </a>
-                <a
-                  href="https://www.instagram.com/proehlificpark/"
+                  href="https://www.instagram.com/cortfitness/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
@@ -69,16 +60,7 @@ export function Header() {
                   <Instagram className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://x.com/proehlificpark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
-                  aria-label="X (Twitter)"
-                >
-                  <Twitter className="h-4 w-4" />
-                </a>
-                <a
-                  href="https://www.youtube.com/user/ProehlificPOWER"
+                  href="https://www.youtube.com/@cortfitness"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
@@ -96,12 +78,13 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/proehlific-logo.png"
-              alt="Proehlific Park"
+              src="https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Personal-Training-near-Etobicoke-226082.png"
+              alt="Cort Fitness"
               width={180}
               height={60}
               className="h-14 w-auto"
               priority
+              unoptimized
             />
           </Link>
 

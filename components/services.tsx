@@ -1,35 +1,35 @@
-import { Dumbbell, Users, GraduationCap, Calendar, Heart, Trophy } from "lucide-react"
+import { Dumbbell, Users, GraduationCap, Heart, Trophy, Zap } from "lucide-react"
 
 const features = [
   {
     icon: Dumbbell,
-    title: "Fitness & Weight Room",
-    description: "State-of-the-art weight lifting equipment and cardio machines with 24/7 member access during open hours",
+    title: "Personal Training",
+    description: "One-on-one customized programs to help you build muscle, lose fat, and achieve your specific goals",
   },
   {
     icon: Users,
-    title: "Group Exercise Classes",
-    description: "Cycling, fitness classes, and group workouts designed to help you lose weight and have fun",
+    title: "Group Fitness Classes",
+    description: "HIIT, yoga, pilates, and strength classes led by certified instructors in a motivating environment",
   },
   {
     icon: GraduationCap,
-    title: "Youth Programs",
-    description: "After school care, summer camps, and youth sports leagues for kids of all ages",
+    title: "Youth Group Training",
+    description: "Specialized programs for young athletes to build strength, coordination, and healthy habits",
   },
   {
     icon: Trophy,
-    title: "Sports Training",
-    description: "Basketball, baseball, football, soccer, lacrosse, and more for youth and adults",
-  },
-  {
-    icon: Calendar,
-    title: "Summer Blast Camp",
-    description: "Fun-filled summer program featuring sports, games, arts and crafts, and more activities",
+    title: "HYROX Training",
+    description: "Prepare for HYROX competitions with specialized training for running and functional fitness",
   },
   {
     icon: Heart,
-    title: "Kids Club & Child Care",
-    description: "Leave your child in the care of our qualified staff while you focus on your workout",
+    title: "On-Site Physio",
+    description: "Access to physiotherapy services to help you move well and stay injury-free",
+  },
+  {
+    icon: Zap,
+    title: "Nutrition Coaching",
+    description: "Learn how to fuel your body properly to support your training and reach your goals faster",
   },
 ]
 
@@ -42,7 +42,7 @@ export function Services() {
             What We <span className="text-primary">Offer</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            More than a gym - a community dedicated to helping you and your family achieve your goals
+            Everything you need to transform your body and become the strongest version of yourself
           </p>
         </div>
 

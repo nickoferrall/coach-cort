@@ -5,33 +5,33 @@ import { useState } from "react"
 
 const testimonials = [
   {
-    text: "Proehlific Park's after-school program has been an absolute life saver this past year, not only for me as a parent, but for my child as well! He absolutely loves going to Proehlific, loves all of the sports and activities he gets to do, friends he has made, and most of all, LOVES the coaches and Angie!",
-    author: "Amy S.",
+    text: "Just wanted to say a quick thank you. From meeting you at the gym about a year ago to now has been quite the journey! I saw a picture of myself one day and did not recognize the person looking back at me. Coach Cort has completely transformed my approach to fitness.",
+    author: "Stella D'Silva",
     source: "google",
   },
   {
-    text: "My kids absolutely love the Summer Blast program at Proehlific! Mrs. Angie and her staff are amazing, you can see how much they love the kids.",
-    author: "Demetria S.",
+    text: "Andrew 'Coach Cort' is truly a one of a kind trainer, coach, and great person. I've been part of his training for 3 or so years now and it's been life changing in all the right ways. Over the first 6 months I saw incredible results and have maintained them since.",
+    author: "Mike",
     source: "google",
   },
   {
-    text: "Summer Blast has been the much needed break for my son and I. We are so happy that this summer program is able to accommodate so many children and working parents. All the protocols and procedures that you have in place to serve and protect our children is much appreciated.",
-    author: "Capricia M.",
+    text: "I have been working out with personal trainers on and off for over 20 years now. There are two things I know for sure. I never work out as consistently or with as much intensity on my own. Coach Cort pushes me to be my best every single session.",
+    author: "Dawn",
     source: "google",
   },
   {
-    text: "This has been the absolute best experience for my 6 year old son. We love everyone here, they go above and beyond with the kids. Thankful for this place.",
-    author: "Tiffine B.",
+    text: "The personal training at Cort Fitness is exceptional. The trainers really take the time to understand your goals and create a customized program. I've never felt stronger or more confident in my fitness journey.",
+    author: "Jason Chow",
     source: "google",
   },
   {
-    text: "We Love Proehlific Park Summer BLAST Camp! As a working parent, I had to find a summer camp during COVID-19. I reached out to Angie and explained my situation. Angie and the Summer Blast Camp Coaches are awesome! Very professional and each week the coaches would communicate with me on how my son was doing.",
-    author: "Jessica H.",
+    text: "Best decision I ever made was joining Cort Fitness. The group classes are challenging but so motivating. The community here is incredible and everyone supports each other. Highly recommend!",
+    author: "Crystal McAfee",
     source: "google",
   },
   {
-    text: "Want your child to come home hungry and tired every day? Begging to stay just a few more minutes? That's exactly what you get when your child attends Summer Blast! at Proehlific Park. Our very active 9 year old LOVES his time playing with the other kids and learning from the coaches.",
-    author: "Jo V.",
+    text: "Coach Cort and his team provide world-class personal training. The attention to detail, the customized programs, and the results speak for themselves. If you're serious about transforming your body, this is the place.",
+    author: "Archie",
     source: "google",
   },
 ]

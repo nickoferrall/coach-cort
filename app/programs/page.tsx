@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import { HomeContent } from "@/components/home-content";
 
 export const metadata: Metadata = {
-  title: "Programs - Proehlific Park Greensboro",
+  title: "Programs - Cort Fitness Etobicoke",
   description:
-    "Explore programs at Proehlific Park in Greensboro, NC. Fitness, sports leagues, youth programs, Summer Blast camp, and more for all ages.",
+    "Explore fitness programs at Cort Fitness in Etobicoke. Personal training, group classes, youth training, and HYROX preparation for all fitness levels.",
   alternates: {
-    canonical: "https://proehlificpark.com/programs",
+    canonical: "https://coachcort.com/programs",
   },
   openGraph: {
-    title: "Programs - Proehlific Park Greensboro",
+    title: "Programs - Cort Fitness Etobicoke",
     description:
-      "Explore programs at Proehlific Park in Greensboro, NC. Fitness, sports leagues, youth programs, Summer Blast camp, and more for all ages.",
-    url: "https://proehlificpark.com/programs",
-    images: ["/proehlific-facility.jpg"],
+      "Explore fitness programs at Cort Fitness in Etobicoke. Personal training, group classes, youth training, and HYROX preparation for all fitness levels.",
+    url: "https://coachcort.com/programs",
+    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
   },
 };
 

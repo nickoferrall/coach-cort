@@ -1,5 +1,4 @@
 const FITLO_API_URL = "https://fitlo.ai/api/gym-website/contact";
-const ORG_ID = "d1cba282-f39f-45f8-9c6d-7a25224e2c5e";
 
 export async function sendLeadToFitlo(data: {
   firstName: string;
@@ -8,9 +7,15 @@ export async function sendLeadToFitlo(data: {
   phone: string;
 }) {
   const apiKey = process.env.GYM_WEBSITE_API_KEY;
+  const orgId = process.env.NEXT_PUBLIC_ORG_ID;
 
   if (!apiKey) {
     console.log("📊 [Fitlo] Skipping (no API key configured)");
+    return;
+  }
+
+  if (!orgId) {
+    console.log("📊 [Fitlo] Skipping (no ORG_ID configured)");
     return;
   }
 
@@ -21,7 +26,7 @@ export async function sendLeadToFitlo(data: {
       "x-api-key": apiKey,
     },
     body: JSON.stringify({
-      orgId: ORG_ID,
+      orgId: orgId,
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,

@@ -7,25 +7,25 @@ const teamMembers = [
   {
     name: "Andrew Cortellessa",
     role: "Owner & Personal Trainer",
-    image: "https://res.cloudinary.com/display97/image/upload/w_400,h_500,c_fill,g_face/7071/Andrew-Cortellessa-262660.jpg",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Andrew-Cortellessa-291587.jpg.jpg",
     bio: "Build muscle, lose fat, and learn how to keep it off. Andrew is a personal trainer based in Etobicoke with years of experience helping clients achieve their fitness goals.",
   },
   {
     name: "Joseph El-Achhab",
     role: "Yoga, HIIT & Pilates Instructor",
-    image: "https://res.cloudinary.com/display97/image/upload/w_400,h_500,c_fill,g_face/7071/Joseph-El-Achhab-289155.jpg",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Joseph-El-Achhab-288069.jpeg",
     bio: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
   },
   {
     name: "Taya Smith",
     role: "Personal Trainer",
-    image: "https://res.cloudinary.com/display97/image/upload/w_400,h_500,c_fill,g_face/7071/Taya-Smith-289159.jpg",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Taya-Smith--288350.jpeg",
     bio: "Taya is a certified personal trainer and holistic nutrition coach dedicated to helping clients develop a healthy relationship with food, fitness, and their bodies.",
   },
   {
     name: "Adam Chang, MScPT",
     role: "On-Site Physio Coach",
-    image: "https://res.cloudinary.com/display97/image/upload/w_400,h_500,c_fill,g_face/7071/Adam-Chang-MScPT-289160.jpg",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/1/Universal-Staff-Image-239854.png",
     bio: "Adam is a registered physiotherapist, performance coach, and movement enthusiast with a deep passion for helping people move well and live pain-free.",
   },
 ]
@@ -62,6 +62,7 @@ export function Team() {
                     alt={member.name}
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">

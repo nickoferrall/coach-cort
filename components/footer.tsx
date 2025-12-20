@@ -21,7 +21,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://www.youtube.com/@cortfitness"
+                href="https://www.youtube.com/@AndrewCortFitness"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -30,7 +30,7 @@ export function Footer() {
                 <Youtube className="h-5 w-5" />
               </a>
               <a
-                href="https://www.google.com/maps/place/Cort+Fitness"
+                href="https://www.google.com/maps/place/Coach+Cort/@43.6130763,-79.5198574,15z/data=!4m5!3m4!1s0x0:0x9438c0a2e6c2a08!8m2!3d43.6130763!4d-79.5198574?shorturl=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

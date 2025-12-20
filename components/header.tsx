@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, MapPin, Instagram, Youtube } from "lucide-react"
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { BookingModal } from "./booking-modal"
@@ -11,6 +12,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,18 +28,21 @@ export function Header() {
     setIsMenuOpen(false)
   }
 
+  // Transparent header only on home page when not scrolled
+  const isTransparent = isHomePage && !isScrolled
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "bg-slate-900/95 backdrop-blur-md shadow-lg" 
-          : "bg-transparent"
+        isTransparent 
+          ? "bg-transparent" 
+          : "bg-white shadow-md"
       }`}
     >
-      <div className="border-b border-white/10">
+      <div className={`border-b ${isTransparent ? "border-white/20" : "border-slate-200"}`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-10 text-sm">
-            <div className="flex items-center gap-2 text-white/80">
+            <div className={`flex items-center gap-2 ${isTransparent ? "text-white/90" : "text-slate-600"}`}>
               <MapPin className="h-4 w-4" />
               <span className="hidden sm:inline">313 Evans Avenue, Etobicoke, Ontario M8Z 1K2</span>
               <span className="sm:hidden">Etobicoke, ON</span>
@@ -44,7 +50,11 @@ export function Header() {
             <div className="flex items-center gap-4">
               <a
                 href="tel:6479670336"
-                className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+                className={`flex items-center gap-2 transition-colors ${
+                  isTransparent 
+                    ? "text-white/90 hover:text-white" 
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
               >
                 <Phone className="h-4 w-4" />
                 <span>647-967-0336</span>
@@ -54,16 +64,24 @@ export function Header() {
                   href="https://www.instagram.com/cortfitness/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
+                  className={`transition-colors ${
+                    isTransparent 
+                      ? "text-white/90 hover:text-white" 
+                      : "text-slate-600 hover:text-slate-900"
+                  }`}
                   aria-label="Instagram"
                 >
                   <Instagram className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://www.youtube.com/@cortfitness"
+                  href="https://www.youtube.com/@AndrewCortFitness"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white transition-colors"
+                  className={`transition-colors ${
+                    isTransparent 
+                      ? "text-white/90 hover:text-white" 
+                      : "text-slate-600 hover:text-slate-900"
+                  }`}
                   aria-label="YouTube"
                 >
                   <Youtube className="h-4 w-4" />
@@ -82,7 +100,9 @@ export function Header() {
               alt="Cort Fitness"
               width={180}
               height={60}
-              className="h-14 w-auto"
+              className={`h-14 w-auto transition-all duration-300 ${
+                isTransparent ? "brightness-0 invert" : ""
+              }`}
               priority
               unoptimized
             />
@@ -91,25 +111,41 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-6">
             <Link
               href="/programs"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                isTransparent 
+                  ? "text-white/90 hover:text-white" 
+                  : "text-slate-700 hover:text-slate-900"
+              }`}
             >
               Programs
             </Link>
             <Link
               href="/#team"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                isTransparent 
+                  ? "text-white/90 hover:text-white" 
+                  : "text-slate-700 hover:text-slate-900"
+              }`}
             >
               Team
             </Link>
             <Link
               href="/reviews"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                isTransparent 
+                  ? "text-white/90 hover:text-white" 
+                  : "text-slate-700 hover:text-slate-900"
+              }`}
             >
               Reviews
             </Link>
             <Link
               href="/faq"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                isTransparent 
+                  ? "text-white/90 hover:text-white" 
+                  : "text-slate-700 hover:text-slate-900"
+              }`}
             >
               FAQ
             </Link>
@@ -119,7 +155,9 @@ export function Header() {
           </nav>
 
           <button
-            className="lg:hidden text-white transition-colors"
+            className={`lg:hidden transition-colors ${
+              isTransparent ? "text-white" : "text-slate-700"
+            }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -128,31 +166,31 @@ export function Header() {
         </div>
 
         {isMenuOpen && (
-          <nav className="lg:hidden pb-6 flex flex-col gap-4 bg-slate-900/90 backdrop-blur-md rounded-lg p-4 -mx-2">
+          <nav className="lg:hidden pb-6 flex flex-col gap-4 bg-white border border-slate-200 rounded-lg p-4 -mx-2 shadow-lg">
             <Link
               href="/programs"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Programs
             </Link>
             <Link
               href="/#team"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Team
             </Link>
             <Link
               href="/reviews"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Reviews
             </Link>
             <Link
               href="/faq"
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               FAQ

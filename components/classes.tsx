@@ -34,8 +34,8 @@ const programs = [
     title: "Group Classes",
     description:
       "Join our energizing group fitness classes led by certified instructors. From HIIT to yoga, we offer classes for all fitness levels in a motivating community environment.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/hyrox-291192.jpeg",
-    objectPosition: "center",
+    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Personal-Training-2-185233.png",
+    objectPosition: "center 30%",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">
@@ -81,7 +81,7 @@ const programs = [
     description:
       "Prepare for HYROX competitions with our specialized training program. Build the endurance, strength, and skills needed to compete at the highest level in this growing fitness race.",
     image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/hyrox-291192.jpeg",
-    objectPosition: "center",
+    objectPosition: "center 30%",
     fullDescription: (
       <div className="space-y-4">
         <p className="text-muted-foreground">

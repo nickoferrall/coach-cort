@@ -1,0 +1,29 @@
+# Coach Cort Website
+
+This is a gym website built with Next.js. You are updating it for Coach Cort.
+
+## Project Structure
+- `pages/` or `app/` - Main page components
+- `components/` - Reusable UI components
+- `public/` - Static assets (images, etc.)
+- `styles/` - CSS and theme configuration
+
+## When Updating Content
+- Keep the existing component structure intact
+- Update text content to match the target gym
+- Replace placeholder images with real ones from the gym's website
+- Match colors and branding to the gym's existing style
+
+## AI Integration
+- The org ID and phone number are already configured in `.env.local`
+- Contact forms and AI features will work automatically
+- Don't modify the API routes or AI integration code
+
+## Guidelines
+- Use semantic HTML
+- Maintain accessibility
+- Keep the responsive design working
+- Test on mobile and desktop views
+
+## After Completing Updates
+Run `git add . && git commit -m "Updated for Coach Cort" && git push` to deploy.

@@ -27,10 +27,23 @@ export function Hero() {
             Customized training specific to your goals. Build muscle, lose fat, and become the strongest version of yourself.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://api.leadconnectorhq.com/widget/form/KrpUynRBlFsIW5fqsAhu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground w-full sm:w-auto"
+              >
+                Book A Free Assessment
+              </Button>
+            </a>
             <Button
               onClick={() => setIsModalOpen(true)}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:text-white"
             >
               Request More Info
             </Button>

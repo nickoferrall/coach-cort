@@ -3,6 +3,12 @@
 import { Star } from "lucide-react"
 import { useState } from "react"
 
+const videoTestimonials = [
+  { id: "1005835180", title: "Client Transformation Story" },
+  { id: "1010674731", title: "Personal Training Results" },
+  { id: "844664636", title: "Fitness Journey" },
+]
+
 const testimonials = [
   {
     text: "Just wanted to say a quick thank you. From meeting you at the gym about a year ago to now has been quite the journey! I saw a picture of myself one day and did not recognize the person looking back at me. Coach Cort has completely transformed my approach to fitness.",
@@ -47,6 +53,23 @@ export function Testimonials() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Join a community that supports and motivates each other every day
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+          {videoTestimonials.map((video) => (
+            <div
+              key={video.id}
+              className="relative overflow-hidden rounded-2xl shadow-lg aspect-[9/16] bg-slate-900"
+            >
+              <iframe
+                src={`https://player.vimeo.com/video/${video.id}?background=0&autoplay=0&loop=0&byline=0&title=0`}
+                className="absolute inset-0 w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={video.title}
+              />
+            </div>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">

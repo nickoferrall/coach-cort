@@ -50,17 +50,17 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/team" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/#team" className="text-muted-foreground hover:text-primary transition-colors">
                   Team
                 </a>
               </li>
               <li>
-                <a href="/reviews" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/#reviews" className="text-muted-foreground hover:text-primary transition-colors">
                   Reviews
                 </a>
               </li>
               <li>
-                <a href="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/#faq" className="text-muted-foreground hover:text-primary transition-colors">
                   FAQ
                 </a>
               </li>

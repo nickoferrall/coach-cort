@@ -46,7 +46,7 @@ export function Testimonials() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section id="testimonials" className="py-20 bg-slate-50">
+    <section id="reviews" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">What Our Members Say</h2>

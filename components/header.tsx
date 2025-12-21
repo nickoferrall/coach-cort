@@ -130,7 +130,7 @@ export function Header() {
               Team
             </Link>
             <Link
-              href="/#testimonials"
+              href="/#reviews"
               className={`text-sm font-medium transition-colors ${
                 isTransparent 
                   ? "text-white/90 hover:text-white" 
@@ -140,7 +140,7 @@ export function Header() {
               Reviews
             </Link>
             <Link
-              href="/faq"
+              href="/#faq"
               className={`text-sm font-medium transition-colors ${
                 isTransparent 
                   ? "text-white/90 hover:text-white" 
@@ -182,14 +182,14 @@ export function Header() {
               Team
             </Link>
             <Link
-              href="/#testimonials"
+              href="/#reviews"
               className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Reviews
             </Link>
             <Link
-              href="/faq"
+              href="/#faq"
               className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

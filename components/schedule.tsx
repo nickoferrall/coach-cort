@@ -80,7 +80,7 @@ const getShortName = (className: string) => {
   if (className.includes("Youth Girls")) return "Youth Girls"
   if (className.includes("Youth Sport")) return "Youth Sport"
   if (className.includes("Youth General")) return "Youth Fitness"
-  if (className.includes("Strength")) return "S&C"
+  if (className.includes("Strength")) return "Strength & Conditioning"
   return className
 }
 
@@ -206,7 +206,7 @@ export function Schedule() {
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-emerald-100 border border-emerald-300"></div>
-            <span className="text-slate-600">S&C = Strength & Conditioning</span>
+            <span className="text-slate-600">Strength & Conditioning</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-orange-100 border border-orange-300"></div>

@@ -61,6 +61,7 @@ const schedule: WeekSchedule = {
 }
 
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+const shortDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 const times = [
   "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM",
   "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM",
@@ -68,10 +69,19 @@ const times = [
 ]
 
 const getClassColor = (className: string) => {
-  if (className.includes("HYROX")) return "bg-orange-100 border-orange-300 text-orange-800"
-  if (className.includes("Youth Girls")) return "bg-pink-100 border-pink-300 text-pink-800"
-  if (className.includes("Youth")) return "bg-blue-100 border-blue-300 text-blue-800"
-  return "bg-emerald-100 border-emerald-300 text-emerald-800"
+  if (className.includes("HYROX")) return "bg-orange-100 border-orange-300 text-orange-800 hover:bg-orange-200"
+  if (className.includes("Youth Girls")) return "bg-pink-100 border-pink-300 text-pink-800 hover:bg-pink-200"
+  if (className.includes("Youth")) return "bg-blue-100 border-blue-300 text-blue-800 hover:bg-blue-200"
+  return "bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200"
+}
+
+const getShortName = (className: string) => {
+  if (className.includes("HYROX")) return "HYROX"
+  if (className.includes("Youth Girls")) return "Youth Girls"
+  if (className.includes("Youth Sport")) return "Youth Sport"
+  if (className.includes("Youth General")) return "Youth Fitness"
+  if (className.includes("Strength")) return "S&C"
+  return className
 }
 
 export function Schedule() {
@@ -99,23 +109,22 @@ export function Schedule() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {days.map((day) => (
-            <button
-              key={day}
-              onClick={() => setSelectedDay(day)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                selectedDay === day
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-              }`}
-            >
-              {day}
-            </button>
-          ))}
-        </div>
-
         <div className="lg:hidden">
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+            {days.map((day, index) => (
+              <button
+                key={day}
+                onClick={() => setSelectedDay(day)}
+                className={`px-3 py-2 rounded-full text-sm font-medium transition-all ${
+                  selectedDay === day
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                {shortDays[index]}
+              </button>
+            ))}
+          </div>
           <div className="space-y-3">
             {getDayClasses(selectedDay).length > 0 ? (
               getDayClasses(selectedDay).map(([time, classInfo]) => (
@@ -144,15 +153,15 @@ export function Schedule() {
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="p-3 text-left font-semibold text-slate-600 border-b-2 border-slate-200 w-24">
+                <th className="p-2 text-left font-semibold text-slate-600 border-b-2 border-slate-200 w-20 text-sm">
                   Time
                 </th>
-                {days.map((day) => (
+                {days.map((day, index) => (
                   <th
                     key={day}
-                    className="p-3 text-center font-semibold text-slate-600 border-b-2 border-slate-200"
+                    className="p-2 text-center font-semibold text-slate-600 border-b-2 border-slate-200 text-sm"
                   >
-                    {day}
+                    {shortDays[index]}
                   </th>
                 ))}
               </tr>
@@ -164,21 +173,24 @@ export function Schedule() {
                 
                 return (
                   <tr key={time} className="border-b border-slate-100">
-                    <td className="p-3 font-medium text-slate-600 whitespace-nowrap">
+                    <td className="p-2 font-medium text-slate-600 whitespace-nowrap text-sm">
                       {time}
                     </td>
                     {days.map((day) => {
                       const classInfo = schedule[day]?.[time]
                       return (
-                        <td key={`${day}-${time}`} className="p-2">
+                        <td key={`${day}-${time}`} className="p-1">
                           {classInfo && (
                             <div
-                              className={`p-2 rounded-lg border text-center text-xs ${getClassColor(
+                              className={`group relative p-1.5 rounded-md border text-center text-xs cursor-pointer transition-all ${getClassColor(
                                 classInfo.name
                               )}`}
+                              title={`${classInfo.name} with ${classInfo.instructor}`}
                             >
-                              <p className="font-semibold leading-tight">{classInfo.name}</p>
-                              <p className="opacity-75 mt-1">w/{classInfo.instructor}</p>
+                              <p className="font-semibold leading-tight">{getShortName(classInfo.name)}</p>
+                              <p className="opacity-0 group-hover:opacity-100 text-[10px] transition-opacity absolute inset-x-0 -bottom-5 bg-slate-800 text-white rounded px-1 py-0.5 z-10 whitespace-nowrap">
+                                w/{classInfo.instructor}
+                              </p>
                             </div>
                           )}
                         </td>
@@ -194,7 +206,7 @@ export function Schedule() {
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-emerald-100 border border-emerald-300"></div>
-            <span className="text-slate-600">Strength & Conditioning</span>
+            <span className="text-slate-600">S&C = Strength & Conditioning</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-orange-100 border border-orange-300"></div>
@@ -213,4 +225,3 @@ export function Schedule() {
     </section>
   )
 }
-

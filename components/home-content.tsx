@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/testimonials"
 import { CtaBanner } from "@/components/cta-banner"
 import { Facility } from "@/components/facility"
 import { FAQ } from "@/components/faq"
+import { Schedule } from "@/components/schedule"
 import { Footer } from "@/components/footer"
 import { BookingModal } from "@/components/booking-modal"
 
@@ -46,6 +47,7 @@ export function HomeContent({ scrollTo }: HomeContentProps) {
       <Hero />
       <CtaBanner />
       <Classes />
+      <Schedule />
       <Services />
       <Team />
       <Testimonials />

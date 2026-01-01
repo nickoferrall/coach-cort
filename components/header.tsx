@@ -120,6 +120,16 @@ export function Header() {
               Programs
             </Link>
             <Link
+              href="/#schedule"
+              className={`text-sm font-medium transition-colors ${
+                isTransparent 
+                  ? "text-white/90 hover:text-white" 
+                  : "text-slate-700 hover:text-slate-900"
+              }`}
+            >
+              Schedule
+            </Link>
+            <Link
               href="/#team"
               className={`text-sm font-medium transition-colors ${
                 isTransparent 
@@ -173,6 +183,13 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Programs
+            </Link>
+            <Link
+              href="/#schedule"
+              className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Schedule
             </Link>
             <Link
               href="/#team"

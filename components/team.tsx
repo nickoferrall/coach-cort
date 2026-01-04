@@ -25,7 +25,7 @@ const teamMembers = [
   {
     name: "Adam Chang, MScPT",
     role: "On-Site Physio Coach",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/1/Universal-Staff-Image-239854.png",
+    image: "/adam.jpeg",
     bio: "Adam is a registered physiotherapist, performance coach, and movement enthusiast with a deep passion for helping people move well and live pain-free.",
   },
 ]

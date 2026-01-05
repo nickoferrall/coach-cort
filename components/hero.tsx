@@ -28,7 +28,7 @@ export function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://api.leadconnectorhq.com/widget/form/KrpUynRBlFsIW5fqsAhu"
+              href="https://get.mndbdy.ly/LsyZCRTR3Xb"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +36,7 @@ export function Hero() {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground w-full sm:w-auto"
               >
-                Book A Free Assessment
+                Book Class
               </Button>
             </a>
             <Button

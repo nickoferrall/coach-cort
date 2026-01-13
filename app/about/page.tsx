@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Learn about Cort Fitness in Etobicoke, Ontario. Coach Cort delivers high-quality personal training to help you lose weight, build muscle, and transform your life.",
     url: "https://coachcort.com/about",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
 };
 

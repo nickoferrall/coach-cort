@@ -7,19 +7,19 @@ const teamMembers = [
   {
     name: "Andrew Cortellessa",
     role: "Owner & Personal Trainer",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Andrew-Cortellessa-291587.jpg.jpg",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Andrew-Cortellessa.jpg",
     bio: "Build muscle, lose fat, and learn how to keep it off. Andrew is a personal trainer based in Etobicoke with years of experience helping clients achieve their fitness goals.",
   },
   {
     name: "Joseph El-Achhab",
     role: "Yoga, HIIT & Pilates Instructor",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Joseph-El-Achhab-288069.jpeg",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
     bio: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
   },
   {
     name: "Taya Smith",
     role: "Personal Trainer",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Taya-Smith--288350.jpeg",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Taya-Smith.jpg",
     bio: "Taya is a certified personal trainer and holistic nutrition coach dedicated to helping clients develop a healthy relationship with food, fitness, and their bodies.",
   },
   {

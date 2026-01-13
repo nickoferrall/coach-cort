@@ -3,107 +3,48 @@
 import { Button } from "@/components/ui/button"
 import { Info } from "lucide-react"
 import Image from "next/image"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { useState } from "react"
+import Link from "next/link"
 
 const programs = [
   {
+    slug: "personal-training",
     title: "Personal Training",
+    tagline: "Transform your body",
     description:
       "One-on-one customized training programs designed to help you build muscle, lose fat, and achieve your specific fitness goals with expert guidance from our certified trainers.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg",
     objectPosition: "center",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          Our personal training programs are tailored specifically to your goals, fitness level, and schedule. Work one-on-one with our expert trainers to achieve results faster.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">What&apos;s Included:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Custom Programming:</strong> Workouts designed for your specific goals</li>
-            <li><strong>Nutrition Guidance:</strong> Learn how to eat for your goals</li>
-            <li><strong>Progress Tracking:</strong> Regular assessments to measure results</li>
-            <li><strong>Accountability:</strong> Your trainer keeps you on track</li>
-          </ul>
-        </div>
-      </div>
-    ),
   },
   {
+    slug: "group-classes",
     title: "Group Classes",
+    tagline: "Train with the community",
     description:
-      "Join our energizing group fitness classes led by certified instructors. From HIIT to yoga, we offer classes for all fitness levels in a motivating community environment.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Personal-Training-2-185233.png",
+      "Join our energizing group fitness classes led by certified instructors. We offer classes for all fitness levels in a motivating community environment.",
+    image: "/group.webp",
     objectPosition: "center 30%",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          Our group classes provide the energy and motivation of training with others while still getting expert instruction. Classes are designed for all fitness levels.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Class Options:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>HIIT Training:</strong> High-intensity interval workouts for maximum results</li>
-            <li><strong>Yoga:</strong> Improve flexibility, balance, and mental clarity</li>
-            <li><strong>Pilates:</strong> Core-focused strength and stability training</li>
-            <li><strong>Strength Classes:</strong> Build muscle in a group setting</li>
-          </ul>
-        </div>
-      </div>
-    ),
   },
   {
+    slug: "youth-training",
     title: "Youth Group Training",
+    tagline: "Build young athletes",
     description:
       "Specialized training programs for young athletes looking to build strength, improve performance, and develop healthy fitness habits that will last a lifetime.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/coaching-boys-280787.jpg",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg",
     objectPosition: "center",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          Our youth programs are designed to help young athletes build a foundation of strength, coordination, and healthy habits. Training is age-appropriate and fun.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Program Benefits:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Athletic Development:</strong> Build speed, strength, and agility</li>
-            <li><strong>Sport-Specific Training:</strong> Improve performance in your sport</li>
-            <li><strong>Confidence Building:</strong> Develop mental toughness</li>
-            <li><strong>Team Environment:</strong> Train with peers in a supportive setting</li>
-          </ul>
-        </div>
-      </div>
-    ),
   },
   {
+    slug: "hyrox-training",
     title: "HYROX Training",
+    tagline: "Push your limits",
     description:
-      "Prepare for HYROX competitions with our specialized training program. Build the endurance, strength, and skills needed to compete at the highest level in this growing fitness race.",
-    image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/hyrox-291192.jpeg",
+      "Prepare for HYROX with our specialized training program. Build the endurance, strength, and skills needed to challenge yourself in the world's fastest-growing fitness race.",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/hyrox.jpg",
     objectPosition: "center 30%",
-    fullDescription: (
-      <div className="space-y-4">
-        <p className="text-muted-foreground">
-          HYROX is the world&apos;s largest fitness race, combining running with functional workout stations. Our training program prepares you to compete and excel.
-        </p>
-        <div className="space-y-3">
-          <h4 className="font-semibold text-foreground">Training Focus:</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><strong>Running Endurance:</strong> Build the stamina for 8km of running</li>
-            <li><strong>Functional Fitness:</strong> Master sled pushes, wall balls, rowing, and more</li>
-            <li><strong>Competition Prep:</strong> Race-specific strategies and pacing</li>
-            <li><strong>Community:</strong> Train with other HYROX athletes</li>
-          </ul>
-        </div>
-      </div>
-    ),
   },
 ]
 
 export function Classes() {
-  const [selectedProgram, setSelectedProgram] = useState<(typeof programs)[0] | null>(null)
-
   const scrollToForm = () => {
     const form = document.getElementById("lead-form")
     if (form) {
@@ -121,41 +62,35 @@ export function Classes() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
           {programs.map((program, index) => (
-            <div
+            <Link
               key={index}
-              className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-200 via-slate-100 to-emerald-100 p-[2px] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+              href={`/programs/${program.slug}`}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 block"
             >
-              <div className="relative h-full bg-white rounded-3xl overflow-hidden flex flex-col">
-                <div className="relative h-56 overflow-hidden flex-shrink-0">
-                  <Image
-                    src={program.image || "/placeholder.svg"}
-                    alt={program.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                    style={{ objectPosition: program.objectPosition || "center" }}
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-3xl font-bold text-white drop-shadow-lg">{program.title}</h3>
+              <div className="relative h-80 overflow-hidden">
+                <Image
+                  src={program.image || "/placeholder.svg"}
+                  alt={program.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  style={{ objectPosition: program.objectPosition || "center" }}
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="text-primary-foreground/80 text-sm font-medium mb-1">{program.tagline}</p>
+                  <h3 className="text-2xl font-bold text-white mb-3">{program.title}</h3>
+                  <div className="flex items-center text-white/80 text-sm font-medium group-hover:text-white transition-colors">
+                    Learn more
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </div>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
-                    {program.description}
-                  </p>
-                  <Button
-                    onClick={() => setSelectedProgram(program)}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground group/btn mt-auto cursor-pointer"
-                  >
-                    Learn More
-                    <Info className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -182,29 +117,6 @@ export function Classes() {
           </div>
         </div>
       </div>
-
-      <Dialog open={!!selectedProgram} onOpenChange={() => setSelectedProgram(null)}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle className="text-3xl font-bold">{selectedProgram?.title}</DialogTitle>
-            <div className="text-base leading-relaxed pt-4">{selectedProgram?.fullDescription}</div>
-          </DialogHeader>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Button
-              onClick={() => {
-                setSelectedProgram(null)
-                scrollToForm()
-              }}
-              className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer"
-            >
-              Get Started
-            </Button>
-            <Button onClick={() => setSelectedProgram(null)} variant="outline" className="flex-1 cursor-pointer">
-              Close
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }

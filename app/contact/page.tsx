@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Contact Cort Fitness in Etobicoke, Ontario. Get directions, phone number, and email. Visit us at 313 Evans Avenue.",
     url: "https://coachcort.com/contact",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
 };
 

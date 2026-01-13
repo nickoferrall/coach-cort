@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg",
+        url: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg",
         width: 1200,
         height: 630,
         alt: "Cort Fitness Personal Training Gym in Etobicoke",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Cort Fitness - Etobicoke's Best Personal Training Experience",
     description:
       "Customized training specific to your goals. Build muscle, lose fat, and become the strongest version of yourself.",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
   robots: {
     index: true,
@@ -72,7 +72,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SportsActivityLocation",
   name: "Cort Fitness",
-  image: "https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg",
+  image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg",
   "@id": "https://coachcort.com",
   url: "https://coachcort.com",
   telephone: "+1-647-967-0336",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Read testimonials from Cort Fitness members in Etobicoke. See how Coach Cort has helped clients transform their bodies and lives.",
     url: "https://coachcort.com/testimonials",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
 };
 

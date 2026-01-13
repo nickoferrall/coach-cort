@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Frequently asked questions about Cort Fitness in Etobicoke. Learn about personal training, group classes, HYROX training, and more.",
     url: "https://coachcort.com/faq",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
 };
 

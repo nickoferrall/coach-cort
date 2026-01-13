@@ -96,7 +96,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/Personal-Training-near-Etobicoke-226082.png"
+              src="https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/logo.png"
               alt="Cort Fitness"
               width={180}
               height={60}

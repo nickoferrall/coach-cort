@@ -11,7 +11,7 @@ export function Hero() {
     <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"
+          src="https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"
           alt="Cort Fitness Personal Training Gym in Etobicoke"
           className="absolute inset-0 w-full h-full object-cover"
         />

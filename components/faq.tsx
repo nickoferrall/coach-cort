@@ -1,7 +1,8 @@
-"use client"
-
-import { ChevronDown } from "lucide-react"
-import { useState } from "react"
+"use client";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { IconMinus, IconPlus } from "@tabler/icons-react";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -34,57 +35,90 @@ const faqs = [
     answer:
       "We're open Monday through Friday from 6:00 AM to 9:00 PM, Saturday from 8:00 AM to 4:00 PM, and Sunday from 9:00 AM to 2:00 PM. Contact us to schedule your free assessment at a time that works for you.",
   },
-]
+];
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
-
+  const [open, setOpen] = useState<string | null>(null);
   return (
-    <section id="faq" className="py-20 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get answers to common questions about Cort Fitness
-          </p>
-        </div>
-
-        <div className="space-y-4">
+    <section id="faq" className="bg-slate-50">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 py-20 md:grid-cols-2 md:px-8 md:py-40">
+        <h2 className="text-center text-4xl font-bold tracking-tight text-neutral-600 md:text-left md:text-6xl dark:text-neutral-50">
+          Frequently asked questions
+        </h2>
+        <div className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {faqs.map((faq, index) => (
-            <div
+            <FAQItem
               key={index}
-              className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-200 via-slate-100 to-emerald-100 p-[2px] transition-all duration-300 hover:shadow-lg"
-            >
-              <div className="bg-white rounded-2xl">
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-secondary/20 transition-colors rounded-2xl"
-                >
-                  <span className="text-lg font-bold text-foreground pr-8">{faq.question}</span>
-                  <ChevronDown
-                    className={`h-6 w-6 text-primary flex-shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-                  }`}
-                >
-                  <div className="px-8 pb-6 text-muted-foreground leading-relaxed whitespace-pre-line">
-                    {faq.answer}
-                  </div>
-                </div>
-              </div>
-            </div>
+              question={faq.question}
+              answer={faq.answer}
+              open={open}
+              setOpen={setOpen}
+            />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
+
+const FAQItem = ({
+  question,
+  answer,
+  setOpen,
+  open,
+}: {
+  question: string;
+  answer: string;
+  open: string | null;
+  setOpen: (open: string | null) => void;
+}) => {
+  const isOpen = open === question;
+
+  return (
+    <div
+      className="cursor-pointer py-4"
+      onClick={() => {
+        if (isOpen) {
+          setOpen(null);
+        } else {
+          setOpen(question);
+        }
+      }}
+    >
+      <div className="flex items-start">
+        <div className="relative mr-4 mt-1 h-6 w-6 flex-shrink-0">
+          <IconPlus
+            className={cn(
+              "absolute inset-0 h-6 w-6 transform text-primary transition-all duration-200",
+              isOpen && "rotate-90 scale-0"
+            )}
+          />
+          <IconMinus
+            className={cn(
+              "absolute inset-0 h-6 w-6 rotate-90 scale-0 transform text-primary transition-all duration-200",
+              isOpen && "rotate-0 scale-100"
+            )}
+          />
+        </div>
+        <div>
+          <h3 className="text-lg font-medium text-neutral-700 dark:text-neutral-200">
+            {question}
+          </h3>
+          <AnimatePresence mode="wait">
+            {isOpen && (
+              <motion.div
+                initial={{ height: 0 }}
+                animate={{ height: "auto" }}
+                exit={{ height: 0 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className="overflow-hidden text-neutral-500 dark:text-neutral-400"
+              >
+                <p className="pt-2">{answer}</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
+    </div>
+  );
+};

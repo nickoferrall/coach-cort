@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Explore fitness programs at Cort Fitness in Etobicoke. Personal training, group classes, youth training, and HYROX preparation for all fitness levels.",
     url: "https://coachcort.com/programs",
-    images: ["https://res.cloudinary.com/display97/image/upload/q_auto,fl_lossy,f_auto/7071/strength-training-in-Etobicoke-279572.jpg"],
+    images: ["https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg"],
   },
 };
 

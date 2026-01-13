@@ -1,4 +1,5 @@
 import { Instagram, Youtube, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -42,38 +43,69 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">QUICK LINKS</h4>
+            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">PROGRAMS</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/programs" className="text-muted-foreground hover:text-primary transition-colors">
-                  Programs
-                </a>
+                <Link href="/programs/personal-training" className="text-muted-foreground hover:text-primary transition-colors">
+                  Personal Training
+                </Link>
               </li>
               <li>
-                <a href="/#schedule" className="text-muted-foreground hover:text-primary transition-colors">
-                  Schedule
-                </a>
+                <Link href="/programs/group-classes" className="text-muted-foreground hover:text-primary transition-colors">
+                  Group Classes
+                </Link>
               </li>
               <li>
-                <a href="/#team" className="text-muted-foreground hover:text-primary transition-colors">
-                  Team
-                </a>
+                <Link href="/programs/youth-training" className="text-muted-foreground hover:text-primary transition-colors">
+                  Youth Training
+                </Link>
               </li>
               <li>
-                <a href="/#reviews" className="text-muted-foreground hover:text-primary transition-colors">
-                  Reviews
-                </a>
+                <Link href="/programs/hyrox-training" className="text-muted-foreground hover:text-primary transition-colors">
+                  HYROX Training
+                </Link>
               </li>
               <li>
-                <a href="/#faq" className="text-muted-foreground hover:text-primary transition-colors">
-                  FAQ
-                </a>
+                <Link href="/programs" className="text-muted-foreground hover:text-primary transition-colors">
+                  All Programs
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">CONTACT INFO</h4>
+            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">LINKS</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/#schedule" className="text-muted-foreground hover:text-primary transition-colors">
+                  Schedule
+                </Link>
+              </li>
+              <li>
+                <Link href="/reviews" className="text-muted-foreground hover:text-primary transition-colors">
+                  Reviews
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">CONTACT</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>313 Evans Avenue</li>
               <li>Etobicoke, Ontario M8Z 1K2</li>
@@ -86,24 +118,6 @@ export function Footer() {
                 <a href="mailto:a.cortfitness@gmail.com" className="hover:text-primary transition-colors">
                   a.cortfitness@gmail.com
                 </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold text-foreground mb-4 tracking-tight">HOURS</h4>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li className="flex justify-between">
-                <span>Mon - Fri:</span>
-                <span>6:00 AM - 9:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Saturday:</span>
-                <span>8:00 AM - 4:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday:</span>
-                <span>9:00 AM - 2:00 PM</span>
               </li>
             </ul>
           </div>

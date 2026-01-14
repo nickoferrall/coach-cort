@@ -42,8 +42,8 @@ export function FAQ() {
   return (
     <section id="faq" className="bg-slate-50">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 py-20 md:grid-cols-2 md:px-8 md:py-40">
-        <h2 className="text-center text-4xl font-bold tracking-tight text-neutral-600 md:text-left md:text-6xl dark:text-neutral-50">
-          Frequently asked questions
+        <h2 className="text-center text-4xl md:text-5xl font-bold text-foreground md:text-left">
+          Frequently Asked Questions
         </h2>
         <div className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {faqs.map((faq, index) => (

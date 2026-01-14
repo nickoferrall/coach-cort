@@ -67,9 +67,9 @@ export function Classes() {
             <Link
               key={index}
               href={`/programs/${program.slug}`}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 block"
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 block will-change-transform"
             >
-              <div className="relative h-80 overflow-hidden">
+              <div className="relative h-80 overflow-hidden rounded-2xl">
                 <Image
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}

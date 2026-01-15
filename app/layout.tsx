@@ -111,7 +111,7 @@ const jsonLd = {
     },
   ],
   sameAs: [
-    "https://www.instagram.com/cortfitness/",
+    "https://www.instagram.com/cortfitnessetob",
     "https://www.youtube.com/@cortfitness",
   ],
   aggregateRating: {
@@ -163,7 +163,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://coachcort.com" />
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Etobicoke" />
         <meta name="geo.position" content="43.6204;-79.5084" />

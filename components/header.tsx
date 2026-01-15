@@ -61,7 +61,7 @@ export function Header() {
               </a>
               <div className="flex items-center gap-2">
                 <a
-                  href="https://www.instagram.com/cortfitness/"
+                  href="https://www.instagram.com/cortfitnessetob"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`transition-colors ${

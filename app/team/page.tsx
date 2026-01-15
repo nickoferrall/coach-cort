@@ -41,7 +41,7 @@ const teamJsonLd = [
     description: "Andrew is a personal trainer based in Etobicoke with years of experience helping clients build muscle, lose fat, and achieve their fitness goals.",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Andrew-Cortellessa.jpg",
     sameAs: [
-      "https://www.instagram.com/cortfitness/",
+      "https://www.instagram.com/cortfitnessetob",
       "https://www.youtube.com/@cortfitness",
     ],
   },

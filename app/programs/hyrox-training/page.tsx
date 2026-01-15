@@ -203,7 +203,7 @@ export default function HyroxTrainingPage() {
                 Train Like a HYROX Athlete
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                See our athletes in action at Hyrox competitions.
+                See our athletes in action.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

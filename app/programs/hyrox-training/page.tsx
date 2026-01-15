@@ -169,7 +169,7 @@ export default function HyroxTrainingPage() {
                   src="/hyrox-main.jpeg"
                   alt="HYROX Training at Cort Fitness"
                   fill
-                  className="object-cover object-[center_30%]"
+                  className="object-cover object-[center_60%]"
                   priority
                   unoptimized
                 />

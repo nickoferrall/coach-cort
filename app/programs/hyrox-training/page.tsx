@@ -203,14 +203,14 @@ export default function HyroxTrainingPage() {
                 Train Like a HYROX Athlete
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                See our athletes in action at Cort Fitness, training for HYROX competitions.
+                See our athletes in action at Hyrox competitions.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/hyrox.jpeg"
-                  alt="HYROX training at Cort Fitness"
+                  alt="HYROX sled push"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   unoptimized
@@ -219,7 +219,7 @@ export default function HyroxTrainingPage() {
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/hyrox-2.jpeg"
-                  alt="HYROX athlete training"
+                  alt="HYROX sled pull"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   unoptimized
@@ -227,17 +227,8 @@ export default function HyroxTrainingPage() {
               </div>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/IMG_9433.jpeg"
-                  alt="HYROX workout station training"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  unoptimized
-                />
-              </div>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg md:col-span-2">
-                <Image
                   src="/565032e1-ac57-4c8d-bac9-2faaff6b2406.jpeg"
-                  alt="HYROX competition preparation"
+                  alt="HYROX competition"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   unoptimized

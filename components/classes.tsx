@@ -40,7 +40,7 @@ const programs = [
     description:
       "Prepare for HYROX with our specialized training program. Build the endurance, strength, and skills needed to challenge yourself in the world's fastest-growing fitness race.",
     image: "/hyrox-main.jpeg",
-    objectPosition: "center 15%",
+    objectPosition: "center 10%",
   },
 ]
 

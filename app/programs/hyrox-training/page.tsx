@@ -166,10 +166,10 @@ export default function HyroxTrainingPage() {
             <div className="relative h-[400px] lg:h-[500px]">
               <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/hyrox.jpg"
+                  src="/hyrox-main.jpeg"
                   alt="HYROX Training at Cort Fitness"
                   fill
-                  className="object-cover object-[center_30%]"
+                  className="object-cover object-[center_15%]"
                   priority
                   unoptimized
                 />
@@ -191,6 +191,59 @@ export default function HyroxTrainingPage() {
               </p>
             </div>
             <YouTubeEmbed videoId="YN-n8t8d2bA" title="What is HYROX?" />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Train Like a HYROX Athlete
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                See our athletes in action.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/hyrox.jpeg"
+                  alt="HYROX sled push"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/hyrox-2.jpeg"
+                  alt="HYROX sled pull"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/565032e1-ac57-4c8d-bac9-2faaff6b2406.jpeg"
+                  alt="HYROX competition"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/hyrox-sled.webp"
+                  alt="HYROX sled training"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

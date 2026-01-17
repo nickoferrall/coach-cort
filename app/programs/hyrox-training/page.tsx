@@ -254,7 +254,7 @@ export default function HyroxTrainingPage() {
               </div>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/IMG_9433.jpeg"
+                  src="/IMG_1291.jpeg"
                   alt="HYROX workout"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"

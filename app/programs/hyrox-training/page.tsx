@@ -206,7 +206,7 @@ export default function HyroxTrainingPage() {
                 See our athletes in action.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/hyrox.jpeg"
@@ -238,6 +238,24 @@ export default function HyroxTrainingPage() {
                 <Image
                   src="/hyrox-sled.webp"
                   alt="HYROX sled training"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/IMG_6292.jpeg"
+                  alt="HYROX athlete training"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/IMG_9433.jpeg"
+                  alt="HYROX workout"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   unoptimized

@@ -69,21 +69,6 @@ const teamJsonLd = [
     description: "Taya is a certified personal trainer and holistic nutrition coach dedicated to helping clients develop a healthy relationship with food, fitness, and their bodies.",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Taya-Smith.jpg",
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Adam Chang",
-    jobTitle: "On-Site Physio Coach",
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      name: "MScPT",
-    },
-    worksFor: {
-      "@type": "SportsActivityLocation",
-      name: "Cort Fitness",
-    },
-    description: "Adam is a registered physiotherapist, performance coach, and movement enthusiast with a deep passion for helping people move well and live pain-free.",
-  },
 ]
 
 export default function TeamPage() {

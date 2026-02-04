@@ -22,12 +22,6 @@ const teamMembers = [
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Taya-Smith.jpg",
     bio: "Taya is a certified personal trainer and holistic nutrition coach dedicated to helping clients develop a healthy relationship with food, fitness, and their bodies.",
   },
-  {
-    name: "Adam Chang, MScPT",
-    role: "On-Site Physio Coach",
-    image: "/adam.jpeg",
-    bio: "Adam is a registered physiotherapist, performance coach, and movement enthusiast with a deep passion for helping people move well and live pain-free.",
-  },
 ]
 
 export function Team() {
@@ -45,7 +39,7 @@ export function Team() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}

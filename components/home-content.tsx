@@ -11,6 +11,7 @@ import { CtaBanner } from "@/components/cta-banner"
 import { Facility } from "@/components/facility"
 import { FAQ } from "@/components/faq"
 import { Schedule } from "@/components/schedule"
+import { Hiring } from "@/components/hiring"
 import { Footer } from "@/components/footer"
 import { BookingModal } from "@/components/booking-modal"
 
@@ -50,6 +51,7 @@ export function HomeContent({ scrollTo }: HomeContentProps) {
       <Schedule />
       <Services />
       <Team />
+      <Hiring />
       <Testimonials />
       <FAQ />
       <Facility />

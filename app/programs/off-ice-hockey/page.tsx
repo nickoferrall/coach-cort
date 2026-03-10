@@ -11,6 +11,7 @@ import {
   Target,
   TrendingUp,
   Clock,
+  Calendar,
 } from "lucide-react"
 import Image from "next/image"
 import { RequestInfoButton } from "@/components/request-info-button"
@@ -180,6 +181,17 @@ export default function OffIceHockeyPage() {
                 speed, strength, and explosiveness that hockey players need to
                 dominate on the ice.
               </p>
+              <div className="flex items-center gap-3 mb-8 p-4 rounded-xl bg-primary/10 border border-primary/20 max-w-xl">
+                <Calendar className="h-6 w-6 text-primary flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-foreground">
+                    Starts Monday, April 13 at 4:00 PM
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Mondays weekly &bull; Expanding to 3 days/week in the summer
+                  </p>
+                </div>
+              </div>
               <RequestInfoButton className="bg-primary hover:bg-primary/90 text-primary-foreground" />
             </div>
             <div className="relative h-[400px] lg:h-[500px]">
@@ -241,9 +253,9 @@ export default function OffIceHockeyPage() {
                   Program Details
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Athletes train 2-3 sessions per week, each lasting 60 minutes.
-                  Every session follows a structured format designed to maximize
-                  development.
+                  Starting Mondays at 4:00 PM, expanding to 3 sessions per week
+                  once summer begins. Each 60-minute session follows a
+                  structured format designed to maximize development.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8">
                   Each session includes:

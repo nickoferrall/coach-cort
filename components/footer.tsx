@@ -66,6 +66,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/programs/off-ice-hockey" className="text-muted-foreground hover:text-primary transition-colors">
+                  Off-Ice Hockey
+                </Link>
+              </li>
+              <li>
                 <Link href="/programs" className="text-muted-foreground hover:text-primary transition-colors">
                   All Programs
                 </Link>

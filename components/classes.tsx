@@ -42,6 +42,15 @@ const programs = [
     image: "/hyrox-main.jpeg",
     objectPosition: "center 10%",
   },
+  {
+    slug: "off-ice-hockey",
+    title: "Off-Ice Hockey Camp",
+    tagline: "Train for the ice",
+    description:
+      "A long-term off-ice development program for hockey players ages 10-16. Build speed, strength, and explosiveness that translates directly to on-ice performance.",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg",
+    objectPosition: "center",
+  },
 ]
 
 export function Classes() {

@@ -48,8 +48,9 @@ const programs = [
     tagline: "Train for the ice",
     description:
       "A long-term off-ice development program for hockey players ages 10-16. Build speed, strength, and explosiveness that translates directly to on-ice performance.",
-    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg",
+    image: "/hockey-team.png",
     objectPosition: "center",
+    overlay: "bg-gradient-to-t from-black/95 via-black/70 to-black/30",
   },
 ]
 
@@ -87,7 +88,7 @@ export function Classes() {
                   style={{ objectPosition: program.objectPosition || "center" }}
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                <div className={`absolute inset-0 ${program.overlay || "bg-gradient-to-t from-black/90 via-black/50 to-transparent"}`} />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-primary-foreground/80 text-sm font-medium mb-1">{program.tagline}</p>
                   <h3 className="text-2xl font-bold text-white mb-3">{program.title}</h3>

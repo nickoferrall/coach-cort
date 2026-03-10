@@ -185,7 +185,7 @@ export default function OffIceHockeyPage() {
             <div className="relative h-[400px] lg:h-[500px]">
               <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg"
+                  src="/hockey-team.png"
                   alt="Off-Ice Hockey Performance Camp at Cort Fitness"
                   fill
                   className="object-cover"

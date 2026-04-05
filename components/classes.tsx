@@ -47,7 +47,7 @@ const programs = [
     title: "Off-Ice Hockey Camp",
     tagline: "Train for the ice",
     description:
-      "A long-term off-ice development program for hockey players ages 10-16. Build speed, strength, and explosiveness that translates directly to on-ice performance.",
+      "Drop-in off-ice training for hockey players ages 10-16. Build speed, strength, and explosiveness with individual progress tracking. Only 8 spots per class.",
     image: "/hockey-team.png",
     objectPosition: "center",
     overlay: "bg-gradient-to-t from-black/95 via-black/70 to-black/30",

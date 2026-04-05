@@ -12,6 +12,7 @@ import {
   TrendingUp,
   Clock,
   Calendar,
+  BarChart3,
 } from "lucide-react"
 import Image from "next/image"
 import { RequestInfoButton } from "@/components/request-info-button"
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "Off-Ice Hockey Performance Camp in Etobicoke | Cort Fitness - Ages 10-16",
   description:
-    "4-month off-ice hockey training program for players ages 10-16 in Etobicoke. Build speed, agility, strength, and explosiveness that translates directly to on-ice performance. Small groups of 8 at 313 Evans Avenue.",
+    "Off-ice hockey training for players ages 10-16 in Etobicoke. Drop in anytime — we track every athlete's lifts, speed, and jumps individually. Build speed, agility, strength, and explosiveness in small groups of 8 at 313 Evans Avenue.",
   keywords: [
     "off-ice hockey training Etobicoke",
     "hockey performance camp Toronto",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Off-Ice Hockey Performance Camp in Etobicoke | Cort Fitness",
     description:
-      "4-month off-ice development program for hockey players ages 10-16. Build speed, strength, and explosiveness in small groups of 8.",
+      "Off-ice hockey training for players ages 10-16. Drop in anytime — every athlete's progress is individually tracked. Small groups of 8.",
     url: "https://coachcort.com/programs/off-ice-hockey",
     images: [
       {
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Off-Ice Hockey Performance Camp in Etobicoke | Cort Fitness",
     description:
-      "4-month off-ice development program for hockey players ages 10-16. Build speed, strength, and explosiveness in small groups of 8.",
+      "Off-ice hockey training for players ages 10-16. Drop in anytime — every athlete's progress is individually tracked. Small groups of 8.",
     images: [
       "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg",
     ],
@@ -77,15 +78,27 @@ const jsonLd = {
     name: "Etobicoke",
   },
   description:
-    "A 4-month off-ice development program for hockey players ages 10-16, focusing on speed, agility, strength, and injury prevention.",
+    "Drop-in off-ice training for hockey players ages 10-16. Every athlete's lifts, speed stats, and jumps are individually tracked. Focusing on speed, agility, strength, and injury prevention.",
   audience: {
     "@type": "Audience",
     audienceType: "Youth Hockey Players (Ages 10-16)",
   },
-  offers: {
-    "@type": "Offer",
-    availability: "https://schema.org/InStock",
-  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Drop-in (Single Class)",
+      price: "35.00",
+      priceCurrency: "CAD",
+      availability: "https://schema.org/InStock",
+    },
+    {
+      "@type": "Offer",
+      name: "8-Pack",
+      price: "240.00",
+      priceCurrency: "CAD",
+      availability: "https://schema.org/InStock",
+    },
+  ],
 }
 
 const benefits = [
@@ -137,10 +150,10 @@ const differentiators = [
       "Every drill and exercise is selected to improve on-ice performance",
   },
   {
-    icon: TrendingUp,
-    title: "4-Month Progressive Program",
+    icon: BarChart3,
+    title: "Individual Progress Tracking",
     description:
-      "Structured phases that build on each other for continuous improvement over the full program",
+      "Every athlete's lifts, speed stats, jumps, and more are tracked individually — join anytime and see your improvement from day one",
   },
   {
     icon: Clock,
@@ -177,18 +190,30 @@ export default function OffIceHockeyPage() {
                 Off-Ice Hockey Performance Camp
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
-                A 4-month off-ice development program designed to build the
-                speed, strength, and explosiveness that hockey players need to
-                dominate on the ice.
+                Drop-in off-ice training designed to build the speed, strength,
+                and explosiveness that hockey players need to dominate on the
+                ice. Join anytime &mdash; every athlete&apos;s lifts, speed
+                stats, and jumps are individually tracked from day one.
               </p>
-              <div className="flex items-center gap-3 mb-8 p-4 rounded-xl bg-primary/10 border border-primary/20 max-w-xl">
+              <div className="flex items-center gap-3 mb-4 p-4 rounded-xl bg-primary/10 border border-primary/20 max-w-xl">
                 <Calendar className="h-6 w-6 text-primary flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground">
-                    Starts Monday, April 13 at 4:00 PM
+                    Mondays at 1:00 PM &amp; 4:00 PM
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Mondays weekly &bull; Expanding to 3 days/week in the summer
+                    Only 8 spots per class
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 mb-8 p-4 rounded-xl bg-slate-50 border border-slate-200 max-w-xl">
+                <span className="text-2xl font-bold text-foreground flex-shrink-0">$35</span>
+                <div>
+                  <p className="font-semibold text-foreground">
+                    Drop-in (single class)
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    8-pack available: $240 + HST ($30/class)
                   </p>
                 </div>
               </div>
@@ -253,9 +278,10 @@ export default function OffIceHockeyPage() {
                   Program Details
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Starting Mondays at 4:00 PM, expanding to 3 sessions per week
-                  once summer begins. Each 60-minute session follows a
-                  structured format designed to maximize development.
+                  Mondays at 1:00 PM and 4:00 PM with only 8 spots per class.
+                  Drop in any week &mdash; there&apos;s no need to start from
+                  the beginning. Each 60-minute session follows a structured
+                  format designed to maximize development.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8">
                   Each session includes:
@@ -324,9 +350,12 @@ export default function OffIceHockeyPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Elevate Your Game?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us to learn more about the Off-Ice Hockey Performance Camp
-            and secure your spot. Spaces are limited to 8 athletes per group.
+          <p className="text-xl text-white/90 mb-4 max-w-2xl mx-auto">
+            Drop in anytime &mdash; only 8 spots per class. $35/class or grab
+            an 8-pack for $240 + HST.
+          </p>
+          <p className="text-lg text-white/70 mb-8">
+            Mondays at 1:00 PM &amp; 4:00 PM
           </p>
           <RequestInfoButton
             variant="secondary"

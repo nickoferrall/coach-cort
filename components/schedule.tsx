@@ -22,6 +22,8 @@ const schedule: WeekSchedule = {
     "6:00 AM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
     "8:00 AM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
     "12:00 PM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
+    "1:00 PM": { name: "Sport Specific", instructor: "Andrew" },
+    "4:00 PM": { name: "Sport Specific", instructor: "Andrew" },
     "5:00 PM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
     "7:00 PM": { name: "Full Body Strength & Conditioning", instructor: "Taya" },
   },
@@ -70,6 +72,7 @@ const times = [
 
 const getClassColor = (className: string) => {
   if (className.includes("HYROX")) return "bg-orange-100 border-orange-300 text-orange-800 hover:bg-orange-200"
+  if (className.includes("Sport Specific")) return "bg-purple-100 border-purple-300 text-purple-800 hover:bg-purple-200"
   if (className.includes("Youth Girls")) return "bg-pink-100 border-pink-300 text-pink-800 hover:bg-pink-200"
   if (className.includes("Youth")) return "bg-blue-100 border-blue-300 text-blue-800 hover:bg-blue-200"
   return "bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200"
@@ -77,6 +80,7 @@ const getClassColor = (className: string) => {
 
 const getShortName = (className: string) => {
   if (className.includes("HYROX")) return "HYROX"
+  if (className.includes("Sport Specific")) return "Sport Specific"
   if (className.includes("Youth Girls")) return "Youth Girls"
   if (className.includes("Youth Sport")) return "Youth Sport"
   if (className.includes("Youth General")) return "Youth Fitness"
@@ -215,6 +219,10 @@ export function Schedule() {
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-blue-100 border border-blue-300"></div>
             <span className="text-slate-600">Youth Programs</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-purple-100 border border-purple-300"></div>
+            <span className="text-slate-600">Sport Specific</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded bg-pink-100 border border-pink-300"></div>

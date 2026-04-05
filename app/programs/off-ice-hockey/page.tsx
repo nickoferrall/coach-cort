@@ -179,7 +179,7 @@ export default function OffIceHockeyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="pt-32 md:pt-40 pb-16 bg-white overflow-hidden">
+      <section className="pt-24 md:pt-28 pb-16 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
             <div className="py-8 lg:py-16">

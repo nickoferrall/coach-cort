@@ -222,8 +222,8 @@ export default function OffIceHockeyPage() {
             <div className="relative h-[400px] lg:h-[500px]">
               <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="/hockey-team.png"
-                  alt="Off-Ice Hockey Performance Camp at Cort Fitness"
+                  src="/sport-specific-training.jpg"
+                  alt="Sport specific training at Cort Fitness"
                   fill
                   className="object-cover"
                   priority
@@ -297,8 +297,8 @@ export default function OffIceHockeyPage() {
               </div>
               <div className="relative h-[500px] rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/coaching-boys.jpg"
-                  alt="Hockey athletes in off-ice training"
+                  src="/sport-specific-training.jpg"
+                  alt="Coach Andrew with youth athletes during sport specific training"
                   fill
                   className="object-cover"
                   unoptimized

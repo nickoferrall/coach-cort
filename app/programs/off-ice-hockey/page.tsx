@@ -199,7 +199,7 @@ export default function OffIceHockeyPage() {
                 <Calendar className="h-6 w-6 text-primary flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground">
-                    Mondays at 1:00 PM &amp; 4:00 PM
+                    Mondays at 4:00 PM &amp; Saturdays at 1:00 PM
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Only 8 spots per class
@@ -278,7 +278,7 @@ export default function OffIceHockeyPage() {
                   Program Details
                 </h2>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Mondays at 1:00 PM and 4:00 PM with only 8 spots per class.
+                  Mondays at 4:00 PM and Saturdays at 1:00 PM with only 8 spots per class.
                   Drop in any week &mdash; there&apos;s no need to start from
                   the beginning. Each 60-minute session follows a structured
                   format designed to maximize development.
@@ -355,7 +355,7 @@ export default function OffIceHockeyPage() {
             an 8-pack for $240 + HST.
           </p>
           <p className="text-lg text-white/70 mb-8">
-            Mondays at 1:00 PM &amp; 4:00 PM
+            Mondays at 4:00 PM &amp; Saturdays at 1:00 PM
           </p>
           <RequestInfoButton
             variant="secondary"

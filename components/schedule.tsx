@@ -46,7 +46,6 @@ const schedule: WeekSchedule = {
     "6:00 AM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
     "8:00 AM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
     "12:00 PM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
-    "4:00 PM": { name: "Youth General Fitness", instructor: "Andrew" },
     "5:00 PM": { name: "Full Body Strength & Conditioning", instructor: "Andrew" },
   },
   Saturday: {
@@ -58,7 +57,6 @@ const schedule: WeekSchedule = {
   Sunday: {
     "10:00 AM": { name: "Full Body Strength & Conditioning", instructor: "Joe" },
     "12:00 PM": { name: "Youth General Fitness", instructor: "Andrew" },
-    "1:00 PM": { name: "Youth Sport Performance", instructor: "Andrew" },
   },
 }
 

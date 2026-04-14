@@ -222,8 +222,8 @@ export default function OffIceHockeyPage() {
             <div className="relative h-[400px] lg:h-[500px]">
               <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="/sport-specific-training.jpg"
-                  alt="Sport specific training at Cort Fitness"
+                  src="/hockey-team.png"
+                  alt="Off-Ice Hockey Performance Camp at Cort Fitness"
                   fill
                   className="object-cover"
                   priority

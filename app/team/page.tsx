@@ -69,6 +69,18 @@ const teamJsonLd = [
     description: "Taya is a certified personal trainer and holistic nutrition coach dedicated to helping clients develop a healthy relationship with food, fitness, and their bodies.",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Taya-Smith.jpg",
   },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Victoria Di Cicco",
+    jobTitle: "Personal Trainer & Strength Coach",
+    worksFor: {
+      "@type": "SportsActivityLocation",
+      name: "Cort Fitness",
+    },
+    description: "Victoria has over 13 years in fitness and health, blending biomechanics, strength training, and functional performance to help clients move well for life, prevent injuries, and build strength with longevity at the core.",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Victoria-Di-Cicco.jpg",
+  },
 ]
 
 export default function TeamPage() {

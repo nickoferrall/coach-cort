@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "Who are the trainers at Cort Fitness?",
     answer:
-      "Our team includes Andrew Cortellessa (Owner & Personal Trainer), Joseph El-Achhab (Yoga, HIIT & Pilates Instructor), Taya Smith (Personal Trainer & Nutrition Coach), and Adam Chang (On-Site Physio Coach). Each trainer brings unique expertise to help you reach your goals.",
+      "Our team includes Andrew Cortellessa (Owner & Personal Trainer), Joseph El-Achhab (Yoga, HIIT & Pilates Instructor), Taya Smith (Personal Trainer & Nutrition Coach), Victoria Di Cicco (Personal Trainer & Strength Coach), and Adam Chang (On-Site Physio Coach). Each trainer brings unique expertise to help you reach your goals.",
   },
   {
     question: "Where is Cort Fitness located?",

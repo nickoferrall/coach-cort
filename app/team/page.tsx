@@ -48,18 +48,6 @@ const teamJsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Joseph El-Achhab",
-    jobTitle: "Yoga, HIIT & Pilates Instructor",
-    worksFor: {
-      "@type": "SportsActivityLocation",
-      name: "Cort Fitness",
-    },
-    description: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
-    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
     name: "Taya Smith",
     jobTitle: "Personal Trainer & Nutrition Coach",
     worksFor: {
@@ -80,6 +68,18 @@ const teamJsonLd = [
     },
     description: "Victoria has over 13 years in fitness and health, blending biomechanics, strength training, and functional performance to help clients move well for life, prevent injuries, and build strength with longevity at the core.",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Victoria-Di-Cicco.jpg",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Joseph El-Achhab",
+    jobTitle: "Yoga, HIIT & Pilates Instructor",
+    worksFor: {
+      "@type": "SportsActivityLocation",
+      name: "Cort Fitness",
+    },
+    description: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
   },
 ]
 

@@ -11,12 +11,6 @@ const teamMembers = [
     bio: "Build muscle, lose fat, and learn how to keep it off. Andrew is a personal trainer based in Etobicoke with years of experience helping clients achieve their fitness goals.",
   },
   {
-    name: "Joseph El-Achhab",
-    role: "Yoga, HIIT & Pilates Instructor",
-    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
-    bio: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
-  },
-  {
     name: "Taya Smith",
     role: "Personal Trainer",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Taya-Smith.jpg",
@@ -27,6 +21,12 @@ const teamMembers = [
     role: "Personal Trainer",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Victoria-Di-Cicco.jpg",
     bio: "With over 13 years in fitness and health, Victoria blends biomechanics, strength training, and functional performance to take clients from pain to function, and function to strength. A passionate advocate for women's fitness, she helps clients of all ages build confidence through capability.",
+  },
+  {
+    name: "Joseph El-Achhab",
+    role: "Yoga, HIIT & Pilates Instructor",
+    image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
+    bio: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
   },
 ]
 

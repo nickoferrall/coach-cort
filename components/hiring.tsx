@@ -1,13 +1,7 @@
-import { Dumbbell, Hand, Mail } from "lucide-react"
+import { Hand, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const positions = [
-  {
-    icon: Dumbbell,
-    title: "Personal Trainer",
-    description:
-      "Join our team and help clients reach their fitness goals with customized one-on-one training programs. Certified personal trainers with a passion for coaching are encouraged to apply.",
-  },
   {
     icon: Hand,
     title: "Massage Therapist",
@@ -30,7 +24,7 @@ export function Hiring() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="max-w-xl mx-auto">
           {positions.map((position, index) => {
             const Icon = position.icon
             return (

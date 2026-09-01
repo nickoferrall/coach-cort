@@ -1,14 +1,26 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
-const teamMembers = [
+type TeamMember = {
+  name: string
+  role: string
+  image: string
+  bio: string
+  availability?: string
+  availabilityLink?: string
+}
+
+const teamMembers: TeamMember[] = [
   {
     name: "Andrew Cortellessa",
     role: "Owner & Personal Trainer",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Andrew-Cortellessa.jpg",
-    bio: "Build muscle, lose fat, and learn how to keep it off. Andrew is a personal trainer based in Etobicoke with years of experience helping clients achieve their fitness goals.",
+    bio: "Build muscle, lose fat, and learn how to keep it off. Andrew is a personal trainer based in Etobicoke with years of experience helping clients achieve their fitness goals. His 1-on-1 roster is currently full, but you can train with Andrew in his group classes.",
+    availability: "Not accepting 1-on-1 clients — train with Andrew in group classes",
+    availabilityLink: "/#schedule",
   },
   {
     name: "Taya Smith",
@@ -27,6 +39,7 @@ const teamMembers = [
     role: "Yoga, HIIT & Pilates Instructor",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Joseph-El-Achhab.jpg",
     bio: "Joe is a yoga, handstand, arm-balance, and HIIT Pilates instructor with a passion for guiding people in movement since 2021.",
+    availability: "Not accepting 1-on-1 clients",
   },
 ]
 
@@ -72,6 +85,17 @@ export function Team() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
                   <p className="text-primary font-medium text-sm">{member.role}</p>
+                  {member.availability &&
+                    (member.availabilityLink ? (
+                      <Link
+                        href={member.availabilityLink}
+                        className="mt-2 inline-block text-xs text-muted-foreground underline underline-offset-2 hover:text-primary"
+                      >
+                        {member.availability}
+                      </Link>
+                    ) : (
+                      <p className="mt-2 text-xs text-muted-foreground">{member.availability}</p>
+                    ))}
                 </div>
               </div>
             </div>

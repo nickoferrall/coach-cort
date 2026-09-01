@@ -38,7 +38,7 @@ const teamJsonLd = [
       name: "Cort Fitness",
       url: "https://coachcort.com",
     },
-    description: "Andrew is a personal trainer based in Etobicoke with years of experience helping clients build muscle, lose fat, and achieve their fitness goals.",
+    description: "Andrew is a personal trainer based in Etobicoke with years of experience helping clients build muscle, lose fat, and achieve their fitness goals. His 1-on-1 roster is currently full — train with Andrew in his group classes.",
     image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/Andrew-Cortellessa.jpg",
     sameAs: [
       "https://www.instagram.com/cortfitnessetob",

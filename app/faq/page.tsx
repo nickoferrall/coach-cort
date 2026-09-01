@@ -55,6 +55,14 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
+      name: "Can I book 1-on-1 personal training with Andrew?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Andrew's 1-on-1 client roster is currently full and he isn't taking on new personal training clients. You can still train with Andrew in our group classes — check the schedule on our website. One-on-one personal training is available with Taya and Victoria.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Where is Cort Fitness located?",
       acceptedAnswer: {
         "@type": "Answer",

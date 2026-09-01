@@ -1,7 +1,8 @@
 import { Metadata } from "next"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { CheckCircle, Dumbbell, Target, TrendingUp, Users } from "lucide-react"
+import { CheckCircle, Dumbbell, Info, Target, TrendingUp, Users } from "lucide-react"
 import Image from "next/image"
 import { RequestInfoButton } from "@/components/request-info-button"
 
@@ -124,6 +125,18 @@ export default function PersonalTrainingPage() {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
                 Work one-on-one with our expert trainers to build muscle, lose fat, and achieve your specific fitness goals faster than you ever thought possible.
               </p>
+              <div className="mb-8 max-w-xl rounded-2xl border border-primary/20 bg-primary/5 p-5">
+                <div className="flex items-start gap-3">
+                  <Info className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <p className="text-sm md:text-base text-foreground">
+                    <span className="font-semibold">Please note:</span> Andrew&apos;s 1-on-1 client roster is currently full and he isn&apos;t taking on new personal training clients. You can still train with Andrew in our group classes — check the{" "}
+                    <Link href="/#schedule" className="text-primary font-medium underline underline-offset-2">
+                      class schedule
+                    </Link>
+                    . One-on-one personal training is available with Taya and Victoria.
+                  </p>
+                </div>
+              </div>
               <RequestInfoButton className="bg-primary hover:bg-primary/90 text-primary-foreground" />
             </div>
             <div className="relative h-[400px] lg:h-[500px]">

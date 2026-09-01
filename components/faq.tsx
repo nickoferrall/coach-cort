@@ -26,6 +26,11 @@ const faqs = [
       "Our team includes Andrew Cortellessa (Owner & Personal Trainer), Joseph El-Achhab (Yoga, HIIT & Pilates Instructor), Taya Smith (Personal Trainer & Nutrition Coach), Victoria Di Cicco (Personal Trainer & Strength Coach), and Adam Chang (On-Site Physio Coach). Each trainer brings unique expertise to help you reach your goals.",
   },
   {
+    question: "Can I book 1-on-1 personal training with Andrew?",
+    answer:
+      "Andrew's 1-on-1 client roster is currently full and he isn't taking on new personal training clients. The good news: you can still train with Andrew in our group classes — check the schedule on our website for class times. One-on-one personal training is available with Taya and Victoria.",
+  },
+  {
     question: "Where is Cort Fitness located?",
     answer:
       "Cort Fitness is located at 313 Evans Avenue in Etobicoke, Ontario M8Z 1K2. We're easily accessible and have convenient parking. Stop by for a tour and see our facility for yourself!",

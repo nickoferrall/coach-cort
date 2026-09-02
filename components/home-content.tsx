@@ -8,6 +8,7 @@ import { Services } from "@/components/services"
 import { Team } from "@/components/team"
 import { Testimonials } from "@/components/testimonials"
 import { CtaBanner } from "@/components/cta-banner"
+import { EventBanner } from "@/components/event-banner"
 import { Facility } from "@/components/facility"
 import { FAQ } from "@/components/faq"
 import { Schedule } from "@/components/schedule"
@@ -46,6 +47,7 @@ export function HomeContent({ scrollTo }: HomeContentProps) {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <EventBanner />
       <CtaBanner />
       <Classes />
       <Schedule />

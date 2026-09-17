@@ -111,7 +111,7 @@ const jsonLd = {
     },
   ],
   sameAs: [
-    "https://www.instagram.com/cortfitnessetob",
+    "https://www.instagram.com/cortfitnesstraining",
     "https://www.youtube.com/@cortfitness",
   ],
   aggregateRating: {

@@ -129,7 +129,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-muted-foreground/80">
-          <p>&copy; {new Date().getFullYear()} Cort Fitness. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 1001004437 ONTARIO INC. operating as Cort Fitness. All rights reserved.</p>
           <p className="mt-2">
             Powered by{" "}
             <a

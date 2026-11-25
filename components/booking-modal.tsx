@@ -97,7 +97,7 @@ export function BookingModal({
         <DialogHeader>
           <DialogTitle>{offerText}</DialogTitle>
           <DialogDescription>
-            Fill out the form below and we'll text you immediately.
+            Fill out the form below and we&apos;ll text you immediately.
           </DialogDescription>
         </DialogHeader>
 
@@ -105,7 +105,7 @@ export function BookingModal({
           <div className="bg-primary/10 border-2 border-primary rounded-lg p-6 text-center">
             <p className="text-lg font-bold text-primary mb-2">Thank You!</p>
             <p className="text-sm text-muted-foreground">
-              Check your phone - we'll text you shortly!
+              Check your phone - we&apos;ll text you shortly!
             </p>
           </div>
         ) : (

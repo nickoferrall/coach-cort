@@ -1,6 +1,3 @@
-"use client"
-
-import { useEffect, useState } from "react"
 import { Hero } from "@/components/hero"
 import { Header } from "@/components/header"
 import { Classes } from "@/components/classes"
@@ -9,40 +6,18 @@ import { Team } from "@/components/team"
 import { Testimonials } from "@/components/testimonials"
 import { CtaBanner } from "@/components/cta-banner"
 import { EventBanner } from "@/components/event-banner"
-import { Facility } from "@/components/facility"
+import { FacilitySection } from "@/components/facility-section"
 import { FAQ } from "@/components/faq"
 import { Schedule } from "@/components/schedule"
 import { Hiring } from "@/components/hiring"
 import { Footer } from "@/components/footer"
-import { BookingModal } from "@/components/booking-modal"
+import { HomeInteractions } from "@/components/home-interactions"
 
 interface HomeContentProps {
   scrollTo?: string
 }
 
 export function HomeContent({ scrollTo }: HomeContentProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsModalOpen(true)
-    }, 3000)
-
-    return () => clearTimeout(timer)
-  }, [])
-
-  useEffect(() => {
-    if (scrollTo) {
-      const timer = setTimeout(() => {
-        const element = document.getElementById(scrollTo)
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" })
-        }
-      }, 100)
-      return () => clearTimeout(timer)
-    }
-  }, [scrollTo])
-
   return (
     <main className="min-h-screen">
       <Header />
@@ -56,10 +31,9 @@ export function HomeContent({ scrollTo }: HomeContentProps) {
       <Hiring />
       <Testimonials />
       <FAQ />
-      <Facility />
+      <FacilitySection />
       <Footer />
-
-      <BookingModal open={isModalOpen} onOpenChange={setIsModalOpen} offerText="Request More Information" />
+      <HomeInteractions scrollTo={scrollTo} />
     </main>
   )
 }

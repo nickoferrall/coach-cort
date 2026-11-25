@@ -72,6 +72,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SportsActivityLocation",
   name: "Cort Fitness",
+  legalName: "1001004437 ONTARIO INC.",
   image: "https://res.cloudinary.com/dngpzsztf/image/upload/q_auto,f_auto/coach-cort/strength-training-in-Etobicoke.jpg",
   "@id": "https://coachcort.com",
   url: "https://coachcort.com",
